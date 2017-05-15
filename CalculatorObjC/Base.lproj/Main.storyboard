@@ -170,7 +170,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="digitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HPk-28-1dD"/>
+                                    <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wkn-O5-NnX"/>
                                 </connections>
                             </button>
                         </subviews>
