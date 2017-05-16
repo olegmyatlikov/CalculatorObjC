@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@property (retain, nonatomic) IBOutlet UILabel *display;
+@property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 
 @end
@@ -22,55 +22,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UISwipeGestureRecognizer *swipeDellLastNumOnDisplay = [[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeOnDisplay:)] autorelease];
-    swipeDellLastNumOnDisplay.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.display addGestureRecognizer:swipeDellLastNumOnDisplay];
+    UISwipeGestureRecognizer *swipeOnDispalyRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeRecognizer:)] ;
+    swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
+    [swipeOnDispalyRecognizer release];
 }
 
 
-- (IBAction)clearButton:(UIButton *)sender {
-    _display.text = @"0";
+- (IBAction)clearButtonPressed:(UIButton *)sender {
+    _displayLabel.text = @"0";
     _userMiddleOfTyping = NO;
 }
 
 
-- (IBAction)dotButton:(UIButton *)sender {
-    if (![_display.text containsString:@"."]) {
-        _display.text = [NSString stringWithFormat:@"%@.", _display.text];
+- (IBAction)dotButtonPressed:(UIButton *)sender {
+    if (![self.displayLabel.text containsString:@"."]) {
+        _displayLabel.text = [NSString stringWithFormat:@"%@.", self.displayLabel.text];
         _userMiddleOfTyping = YES;
     }
 }
 
 
-- (IBAction)digitButton:(UIButton *)sender {
-    NSString *result = [[[NSString alloc] init] autorelease];
+- (IBAction)digitButtonPressed:(UIButton *)sender {
     if (_userMiddleOfTyping) {
-        result = [NSString stringWithFormat:@"%@", _display.text];
-        result = [result stringByAppendingString: sender.titleLabel.text];
-    } else {
-        result = [NSString stringWithFormat:@"%@", sender.titleLabel.text];
+        _displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
+    } else if (![sender.currentTitle  isEqual: @"0"]) { // fix item when we try add 0 to 0 (example: try write "000123")
+        _displayLabel.text = sender.currentTitle;
+        _userMiddleOfTyping = YES;
     }
-    _display.text = [NSString stringWithFormat: @"%@", result];
-    _userMiddleOfTyping = YES;
 }
 
 
-- (void)swipeOnDisplay:(UIGestureRecognizerState *)recognizer {
-    NSString *result = [[[NSString alloc] init] autorelease];
-    result = [NSString stringWithFormat:@"%@", _display.text];
-    if ([result length] > 1) {
-        result = [result substringToIndex:[result length] - 1];
+- (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
+    if ([self.displayLabel.text length] > 1) {
+        _displayLabel.text = [self.displayLabel.text substringToIndex:[self.displayLabel.text length] - 1];
     } else {
-        result = @"0";
+        _displayLabel.text = @"0";
         _userMiddleOfTyping = NO;
     }
-    _display.text = result;
 }
 
 
 
 - (void)dealloc {
-    [_display release];
+    [_displayLabel release];
     [super dealloc];
 }
 
