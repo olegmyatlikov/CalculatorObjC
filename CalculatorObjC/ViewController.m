@@ -46,9 +46,11 @@
 - (IBAction)digitButtonPressed:(UIButton *)sender {
     if (_userMiddleOfTyping) {
         _displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
-    } else if (![sender.currentTitle  isEqual: @"0"]) { // fix item when we try add 0 to 0 (example: try write "000123")
+    } else {
         _displayLabel.text = sender.currentTitle;
-        _userMiddleOfTyping = YES;
+        if (![sender.currentTitle  isEqual: @"0"] && ![self.displayLabel.text isEqual:@"0"])  { // fix item when we try add 0 to 0
+            _userMiddleOfTyping = YES;
+        }
     }
 }
 
