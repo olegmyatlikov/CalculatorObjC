@@ -15,6 +15,8 @@
 		846021D41EC8524700C11C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846021D21EC8524700C11C01 /* LaunchScreen.storyboard */; };
 		84A5DD261ECDA2550055F834 /* Copyright.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5DD251ECDA2550055F834 /* Copyright.xib */; };
 		84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */; };
+		84A5DD2B1ECDC1810055F834 /* AboutUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5DD2A1ECDC1810055F834 /* AboutUs.xib */; };
+		84A5DD2E1ECDC57E0055F834 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		84A5DD251ECDA2550055F834 /* Copyright.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Copyright.xib; sourceTree = "<group>"; };
 		84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightViewController.h; sourceTree = "<group>"; };
 		84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightViewController.m; sourceTree = "<group>"; };
+		84A5DD2A1ECDC1810055F834 /* AboutUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUs.xib; sourceTree = "<group>"; };
+		84A5DD2C1ECDC57E0055F834 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,9 @@
 				846021CA1EC8524700C11C01 /* ViewController.h */,
 				846021CB1EC8524700C11C01 /* ViewController.m */,
 				846021CD1EC8524700C11C01 /* Main.storyboard */,
+				84A5DD2A1ECDC1810055F834 /* AboutUs.xib */,
+				84A5DD2C1ECDC57E0055F834 /* AboutUsViewController.h */,
+				84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */,
 				84A5DD251ECDA2550055F834 /* Copyright.xib */,
 				84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */,
 				84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */,
@@ -148,6 +156,7 @@
 				846021D41EC8524700C11C01 /* LaunchScreen.storyboard in Resources */,
 				846021D11EC8524700C11C01 /* Assets.xcassets in Resources */,
 				846021CF1EC8524700C11C01 /* Main.storyboard in Resources */,
+				84A5DD2B1ECDC1810055F834 /* AboutUs.xib in Resources */,
 				84A5DD261ECDA2550055F834 /* Copyright.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A5DD2E1ECDC57E0055F834 /* AboutUsViewController.m in Sources */,
 				84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */,
 				846021CC1EC8524700C11C01 /* ViewController.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
