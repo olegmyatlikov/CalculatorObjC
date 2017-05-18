@@ -13,6 +13,8 @@
 		846021CF1EC8524700C11C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846021CD1EC8524700C11C01 /* Main.storyboard */; };
 		846021D11EC8524700C11C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846021D01EC8524700C11C01 /* Assets.xcassets */; };
 		846021D41EC8524700C11C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846021D21EC8524700C11C01 /* LaunchScreen.storyboard */; };
+		84A5DD261ECDA2550055F834 /* Copyright.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5DD251ECDA2550055F834 /* Copyright.xib */; };
+		84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		846021D01EC8524700C11C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846021D31EC8524700C11C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846021D51EC8524700C11C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A5DD251ECDA2550055F834 /* Copyright.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Copyright.xib; sourceTree = "<group>"; };
+		84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightViewController.h; sourceTree = "<group>"; };
+		84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,9 @@
 				846021CA1EC8524700C11C01 /* ViewController.h */,
 				846021CB1EC8524700C11C01 /* ViewController.m */,
 				846021CD1EC8524700C11C01 /* Main.storyboard */,
+				84A5DD251ECDA2550055F834 /* Copyright.xib */,
+				84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */,
+				84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */,
 				846021D01EC8524700C11C01 /* Assets.xcassets */,
 				846021D21EC8524700C11C01 /* LaunchScreen.storyboard */,
 				846021D51EC8524700C11C01 /* Info.plist */,
@@ -140,6 +148,7 @@
 				846021D41EC8524700C11C01 /* LaunchScreen.storyboard in Resources */,
 				846021D11EC8524700C11C01 /* Assets.xcassets in Resources */,
 				846021CF1EC8524700C11C01 /* Main.storyboard in Resources */,
+				84A5DD261ECDA2550055F834 /* Copyright.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */,
 				846021CC1EC8524700C11C01 /* ViewController.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
 				846021C61EC8524700C11C01 /* main.m in Sources */,
@@ -315,6 +325,7 @@
 				846021DA1EC8524700C11C01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
