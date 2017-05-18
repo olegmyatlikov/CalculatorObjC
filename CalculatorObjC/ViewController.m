@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CopyrightViewController.h"
 
 @interface ViewController ()
 
@@ -64,6 +65,13 @@
     }
 }
 
+- (IBAction)copyrightButtonPressed:(id)sender {
+    CopyrightViewController *copyrightViewController = [[CopyrightViewController alloc] initWithNibName:@"Copyright" bundle:nil];
+    copyrightViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    copyrightViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    [self presentViewController:copyrightViewController animated:YES completion:nil];
+    [copyrightViewController release];
+}
 
 
 - (void)dealloc {
