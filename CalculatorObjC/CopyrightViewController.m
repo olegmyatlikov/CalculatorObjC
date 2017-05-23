@@ -18,8 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _popUpCopyrightView.layer.cornerRadius = 10;
-    _copyrightTextView.layer.cornerRadius = 5;
+    self.popUpCopyrightView.layer.cornerRadius = 10;
+    self.copyrightTextView.layer.cornerRadius = 5;
 }
 
 - (IBAction)closeButtonPressed:(UIButton *)sender {
