@@ -17,6 +17,7 @@
 		84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */; };
 		84A5DD2B1ECDC1810055F834 /* AboutUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5DD2A1ECDC1810055F834 /* AboutUs.xib */; };
 		84A5DD2E1ECDC57E0055F834 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */; };
+		84DA15041ED027BF001780BC /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DA15031ED027BF001780BC /* CalculatorModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		84A5DD2A1ECDC1810055F834 /* AboutUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUs.xib; sourceTree = "<group>"; };
 		84A5DD2C1ECDC57E0055F834 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		84DA15021ED027BF001780BC /* CalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorModel.h; sourceTree = "<group>"; };
+		84DA15031ED027BF001780BC /* CalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,18 +73,14 @@
 			children = (
 				846021C71EC8524700C11C01 /* AppDelegate.h */,
 				846021C81EC8524700C11C01 /* AppDelegate.m */,
+				84DA15021ED027BF001780BC /* CalculatorModel.h */,
+				84DA15031ED027BF001780BC /* CalculatorModel.m */,
 				846021CA1EC8524700C11C01 /* ViewController.h */,
 				846021CB1EC8524700C11C01 /* ViewController.m */,
 				846021CD1EC8524700C11C01 /* Main.storyboard */,
-				84A5DD2A1ECDC1810055F834 /* AboutUs.xib */,
-				84A5DD2C1ECDC57E0055F834 /* AboutUsViewController.h */,
-				84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */,
-				84A5DD251ECDA2550055F834 /* Copyright.xib */,
-				84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */,
-				84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */,
-				846021D01EC8524700C11C01 /* Assets.xcassets */,
-				846021D21EC8524700C11C01 /* LaunchScreen.storyboard */,
-				846021D51EC8524700C11C01 /* Info.plist */,
+				84CDDFBF1ECF109C00CCC4AB /* About us */,
+				84CDDFBE1ECF108900CCC4AB /* Copyright */,
+				84CDDFC01ECF10C500CCC4AB /* other files */,
 				846021C41EC8524700C11C01 /* Supporting Files */,
 			);
 			path = CalculatorObjC;
@@ -93,6 +92,36 @@
 				846021C51EC8524700C11C01 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84CDDFBE1ECF108900CCC4AB /* Copyright */ = {
+			isa = PBXGroup;
+			children = (
+				84A5DD251ECDA2550055F834 /* Copyright.xib */,
+				84A5DD271ECDA27B0055F834 /* CopyrightViewController.h */,
+				84A5DD281ECDA27B0055F834 /* CopyrightViewController.m */,
+			);
+			name = Copyright;
+			sourceTree = "<group>";
+		};
+		84CDDFBF1ECF109C00CCC4AB /* About us */ = {
+			isa = PBXGroup;
+			children = (
+				84A5DD2A1ECDC1810055F834 /* AboutUs.xib */,
+				84A5DD2C1ECDC57E0055F834 /* AboutUsViewController.h */,
+				84A5DD2D1ECDC57E0055F834 /* AboutUsViewController.m */,
+			);
+			name = "About us";
+			sourceTree = "<group>";
+		};
+		84CDDFC01ECF10C500CCC4AB /* other files */ = {
+			isa = PBXGroup;
+			children = (
+				846021D01EC8524700C11C01 /* Assets.xcassets */,
+				846021D21EC8524700C11C01 /* LaunchScreen.storyboard */,
+				846021D51EC8524700C11C01 /* Info.plist */,
+			);
+			name = "other files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +202,7 @@
 				846021CC1EC8524700C11C01 /* ViewController.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
 				846021C61EC8524700C11C01 /* main.m in Sources */,
+				84DA15041ED027BF001780BC /* CalculatorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

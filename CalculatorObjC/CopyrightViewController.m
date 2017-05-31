@@ -10,7 +10,6 @@
 
 @interface CopyrightViewController ()
 @property (retain, nonatomic) IBOutlet UIView *popUpCopyrightView;
-@property (retain, nonatomic) IBOutlet UITextView *copyrightTextView;
 
 @end
 
@@ -18,8 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.popUpCopyrightView.layer.cornerRadius = 10;
-    self.copyrightTextView.layer.cornerRadius = 5;
+    self.popUpCopyrightView.layer.cornerRadius = 5;
 }
 
 - (IBAction)closeButtonPressed:(UIButton *)sender {
@@ -29,7 +27,6 @@
 
 - (void)dealloc {
     [_popUpCopyrightView release];
-    [_copyrightTextView release];
     [super dealloc];
 }
 @end
