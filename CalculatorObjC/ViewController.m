@@ -16,6 +16,11 @@
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 @property (retain, nonatomic) CalculatorModel *calculatorModel;
 
+@property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
+@property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
+@property (retain, nonatomic) IBOutlet UIStackView *firstTwoLinesStackView;
+@property (retain, nonatomic) IBOutlet UIStackView *numberSystemStackView;
+
 @end
 
 
@@ -36,7 +41,6 @@ static NSString * const CalculatorDotSymbol = @".";
     [swipeOnDispalyRecognizer release];
 }
 
-
 - (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
     if ([self.displayLabel.text length] > 1) {
         self.displayLabel.text = [self.displayLabel.text substringToIndex:[self.displayLabel.text length] - 1];
@@ -46,6 +50,17 @@ static NSString * const CalculatorDotSymbol = @".";
     }
 }
 
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+        [self.firstTwoLinesStackView removeArrangedSubview:self.firstTwoLinesStackView.arrangedSubviews[0]];
+        self.numberSystemStackView.axis = UILayoutConstraintAxisVertical;
+        [self.generalStackView insertArrangedSubview:self.numberSystemStackView atIndex:0];
+    } else {
+        [self.generalStackView removeArrangedSubview:self.generalStackView.arrangedSubviews[0]];
+        self.numberSystemStackView.axis = UILayoutConstraintAxisHorizontal;
+        [self.firstTwoLinesStackView insertArrangedSubview:self.numberSystemStackView atIndex:0];
+    }
+}
 
 - (IBAction)copyrightButtonPressed:(id)sender {
     CopyrightViewController *copyrightViewController = [[CopyrightViewController alloc] initWithNibName:@"Copyright" bundle:nil];
@@ -100,6 +115,10 @@ static NSString * const CalculatorDotSymbol = @".";
 - (void)dealloc {
     [_calculatorModel release];
     [_displayLabel release];
+    [_generalStackView release];
+    [_allButtonsStackView release];
+    [_firstTwoLinesStackView release];
+    [_numberSystemStackView release];
     [super dealloc];
 }
 
