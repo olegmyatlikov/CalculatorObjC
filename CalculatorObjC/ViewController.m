@@ -8,21 +8,28 @@
 
 #import "ViewController.h"
 #import "CopyrightViewController.h"
+#import "CalculatorModel.h"
 
 @interface ViewController ()
 
 @property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
+@property (retain, nonatomic) CalculatorModel *calculatorModel;
 
 @end
 
 
 @implementation ViewController
 
+#pragma mark - constants
+
+static NSString * const CalculatorZeroValue = @"0";
+static NSString * const CalculatorDotSymbol = @".";
+
+#pragma mark - methods
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     UISwipeGestureRecognizer *swipeOnDispalyRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeRecognizer:)] ;
     swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
@@ -30,40 +37,15 @@
 }
 
 
-- (IBAction)clearButtonPressed:(UIButton *)sender {
-    _displayLabel.text = @"0";
-    _userMiddleOfTyping = NO;
-}
-
-
-- (IBAction)dotButtonPressed:(UIButton *)sender {
-    if (![self.displayLabel.text containsString:@"."]) {
-        _displayLabel.text = [NSString stringWithFormat:@"%@.", self.displayLabel.text];
-        _userMiddleOfTyping = YES;
-    }
-}
-
-
-- (IBAction)digitButtonPressed:(UIButton *)sender {
-    if (_userMiddleOfTyping) {
-        _displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
-    } else {
-        _displayLabel.text = sender.currentTitle;
-        if (![sender.currentTitle  isEqual: @"0"] && ![self.displayLabel.text isEqual:@"0"])  { // fix item when we try add 0 to 0
-            _userMiddleOfTyping = YES;
-        }
-    }
-}
-
-
 - (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
     if ([self.displayLabel.text length] > 1) {
-        _displayLabel.text = [self.displayLabel.text substringToIndex:[self.displayLabel.text length] - 1];
+        self.displayLabel.text = [self.displayLabel.text substringToIndex:[self.displayLabel.text length] - 1];
     } else {
-        _displayLabel.text = @"0";
-        _userMiddleOfTyping = NO;
+        self.displayLabel.text = CalculatorZeroValue;
+        self.userMiddleOfTyping = NO;
     }
 }
+
 
 - (IBAction)copyrightButtonPressed:(id)sender {
     CopyrightViewController *copyrightViewController = [[CopyrightViewController alloc] initWithNibName:@"Copyright" bundle:nil];
@@ -74,7 +56,49 @@
 }
 
 
+#pragma mark - tapping on the calc's button
+
+- (IBAction)digitButtonPressed:(UIButton *)sender {
+    if (self.userMiddleOfTyping) {
+        self.displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
+    } else {
+        if (![sender.currentTitle isEqual:CalculatorZeroValue]) {
+            self.userMiddleOfTyping = YES; // fix case when 0 add to 0 (00001)
+        }
+        _displayLabel.text = sender.currentTitle;
+    }
+    
+    self.calculatorModel.operand = self.displayLabel.text.doubleValue;
+}
+
+
+- (IBAction)dotButtonPressed:(UIButton *)sender {
+    if (![self.displayLabel.text containsString:CalculatorDotSymbol]) {
+        self.displayLabel.text = [NSString stringWithFormat:@"%@%@", self.displayLabel.text, CalculatorDotSymbol];
+        self.userMiddleOfTyping = YES;
+    }
+}
+
+
+- (IBAction)operationButtonPressed:(UIButton *)sender {
+    if (self.userMiddleOfTyping) {
+        self.userMiddleOfTyping = NO;
+    }
+    [self.calculatorModel performOperation:sender.currentTitle];
+    self.displayLabel.text = self.calculatorModel.displayResult;
+}
+
+
+- (CalculatorModel*)calculatorModel {
+    if (!_calculatorModel) {
+        _calculatorModel = [[CalculatorModel alloc] init];
+    }
+    return _calculatorModel;
+}
+
+
 - (void)dealloc {
+    [_calculatorModel release];
     [_displayLabel release];
     [super dealloc];
 }
