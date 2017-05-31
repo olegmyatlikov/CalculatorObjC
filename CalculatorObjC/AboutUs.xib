@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,57 +18,79 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emal address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-wN-sug">
-                    <rect key="frame" x="16" y="165" width="179" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="olegmyatlikov@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYu-0w-m9Y">
-                    <rect key="frame" x="16" y="194" width="178" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skype:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETQ-dm-2Gl">
-                    <rect key="frame" x="16" y="242" width="179" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="olegmyatlikov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-Gg-8is">
-                    <rect key="frame" x="16" y="271" width="139" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LinkedIn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-UP-527">
-                    <rect key="frame" x="16" y="318" width="179" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="https://www.linkedin.com/in/oleg-myatlikov/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIi-wd-iL1">
-                    <rect key="frame" x="16" y="347" width="300" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This app create by Oleg Myatlikov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onS-zu-90z">
-                    <rect key="frame" x="16" y="103" width="343" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zy4-z5-fBx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app create by Oleg Myatlikov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onS-zu-90z">
+                            <rect key="frame" x="10" y="30" width="303" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emal address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-wN-sug">
+                            <rect key="frame" x="10" y="94" width="116" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="olegmyatlikov@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYu-0w-m9Y">
+                            <rect key="frame" x="10" y="125" width="178" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skype:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETQ-dm-2Gl">
+                            <rect key="frame" x="10" y="173" width="57" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="olegmyatlikov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyX-Gg-8is">
+                            <rect key="frame" x="10" y="204" width="94" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LinkedIn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-UP-527">
+                            <rect key="frame" x="10" y="252" width="70" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.linkedin.com/in/oleg-myatlikov/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIi-wd-iL1">
+                            <rect key="frame" x="10" y="283" width="300" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="onS-zu-90z" firstAttribute="leading" secondItem="zy4-z5-fBx" secondAttribute="leading" constant="10" id="Avb-Y1-I3n"/>
+                        <constraint firstItem="SGM-UP-527" firstAttribute="top" secondItem="JyX-Gg-8is" secondAttribute="bottom" constant="30" id="KA7-yb-0Na"/>
+                        <constraint firstItem="ETQ-dm-2Gl" firstAttribute="top" secondItem="vYu-0w-m9Y" secondAttribute="bottom" constant="30" id="Ln7-K0-kFY"/>
+                        <constraint firstItem="vYu-0w-m9Y" firstAttribute="leading" secondItem="ETQ-dm-2Gl" secondAttribute="leading" id="Sck-eB-Rz1"/>
+                        <constraint firstItem="JyX-Gg-8is" firstAttribute="top" secondItem="ETQ-dm-2Gl" secondAttribute="bottom" constant="10" id="Tx7-CG-UsW"/>
+                        <constraint firstItem="onS-zu-90z" firstAttribute="top" secondItem="zy4-z5-fBx" secondAttribute="top" constant="30" id="VNj-zc-Xy9"/>
+                        <constraint firstAttribute="bottom" secondItem="EIi-wd-iL1" secondAttribute="bottom" constant="30" id="Xd7-SE-hTq"/>
+                        <constraint firstAttribute="trailing" secondItem="cmB-wN-sug" secondAttribute="trailing" id="ZGh-Un-5Ck"/>
+                        <constraint firstItem="cmB-wN-sug" firstAttribute="leading" secondItem="vYu-0w-m9Y" secondAttribute="leading" id="e02-xH-ios"/>
+                        <constraint firstItem="SGM-UP-527" firstAttribute="leading" secondItem="JyX-Gg-8is" secondAttribute="leading" id="fhp-fb-eEr"/>
+                        <constraint firstItem="JyX-Gg-8is" firstAttribute="leading" secondItem="EIi-wd-iL1" secondAttribute="leading" id="glM-jW-JtI"/>
+                        <constraint firstItem="EIi-wd-iL1" firstAttribute="top" secondItem="SGM-UP-527" secondAttribute="bottom" constant="10" id="jVU-YJ-2xj"/>
+                        <constraint firstItem="vYu-0w-m9Y" firstAttribute="top" secondItem="cmB-wN-sug" secondAttribute="bottom" constant="10" id="ltP-Dn-TVr"/>
+                        <constraint firstItem="ETQ-dm-2Gl" firstAttribute="leading" secondItem="JyX-Gg-8is" secondAttribute="leading" id="n7J-ba-Wlx"/>
+                        <constraint firstItem="cmB-wN-sug" firstAttribute="top" secondItem="onS-zu-90z" secondAttribute="bottom" constant="40" id="plh-0N-z6a"/>
+                        <constraint firstItem="onS-zu-90z" firstAttribute="leading" secondItem="cmB-wN-sug" secondAttribute="leading" id="xkV-Lp-hTu"/>
+                    </constraints>
+                </scrollView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zy4-z5-fBx" secondAttribute="trailing" id="2If-aG-b7v"/>
+                <constraint firstAttribute="bottom" secondItem="zy4-z5-fBx" secondAttribute="bottom" id="Sq7-Uc-aeP"/>
+                <constraint firstItem="zy4-z5-fBx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aT6-Ze-jfC"/>
+                <constraint firstItem="zy4-z5-fBx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mgo-qr-O7D"/>
+            </constraints>
             <point key="canvasLocation" x="18.5" y="-379.5"/>
         </view>
     </objects>
