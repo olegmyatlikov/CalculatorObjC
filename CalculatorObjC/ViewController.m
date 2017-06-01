@@ -15,11 +15,17 @@
 @property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 @property (retain, nonatomic) CalculatorModel *calculatorModel;
-
+@property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *firstTwoLinesStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *numberSystemStackView;
+
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *allButtonsOutletCollection;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonWhichDesebleIfHexCollection;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsWhichDesebleIfOctCollection;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsWichDisableIfBinCollection;
+
 
 @end
 
@@ -30,6 +36,10 @@
 
 static NSString * const CalculatorZeroValue = @"0";
 static NSString * const CalculatorDotSymbol = @".";
+static NSString * const CalculatorHexNumeralSystem = @"hex";
+static NSString * const CalculatorOctNumeralSystem = @"oct";
+static NSString * const CalculatorBinNumeralSystem = @"bin";
+
 
 #pragma mark - methods
 
@@ -39,6 +49,7 @@ static NSString * const CalculatorDotSymbol = @".";
     swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
     [swipeOnDispalyRecognizer release];
+    self.forHexLettersButtonsStackView.hidden = YES;
 }
 
 - (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
@@ -70,6 +81,22 @@ static NSString * const CalculatorDotSymbol = @".";
     [copyrightViewController release];
 }
 
+
+- (void)disableButtonsForNumeralSystem:(NSArray *)buttonsArray {
+    [self enableAllButtons];
+    for (UIButton *button in buttonsArray) {
+        button.enabled = NO;
+        button.alpha = 0.35;
+    }
+}
+
+- (void)enableAllButtons {
+    for (UIButton *button in self.allButtonsOutletCollection) {
+        button.enabled = YES;
+        button.alpha = 1;
+    }
+    self.forHexLettersButtonsStackView.hidden = YES;
+}
 
 #pragma mark - tapping on the calc's button
 
@@ -104,6 +131,24 @@ static NSString * const CalculatorDotSymbol = @".";
 }
 
 
+- (IBAction)numeralSystemButtonPressed:(UIButton *)sender {
+    
+    if ([sender.currentTitle  isEqual: CalculatorBinNumeralSystem]) {
+        [self disableButtonsForNumeralSystem:self.buttonsWichDisableIfBinCollection];
+    } else if ([sender.currentTitle  isEqual: CalculatorOctNumeralSystem]) {
+        [self disableButtonsForNumeralSystem:self.buttonsWhichDesebleIfOctCollection];
+    } else if ([sender.currentTitle  isEqual: CalculatorHexNumeralSystem]) {
+        [self disableButtonsForNumeralSystem:self.buttonWhichDesebleIfHexCollection];
+        self.forHexLettersButtonsStackView.hidden = NO;
+    } else {
+        [self enableAllButtons];
+    }
+    
+}
+
+
+// Lazy getter
+
 - (CalculatorModel*)calculatorModel {
     if (!_calculatorModel) {
         _calculatorModel = [[CalculatorModel alloc] init];
@@ -119,6 +164,12 @@ static NSString * const CalculatorDotSymbol = @".";
     [_allButtonsStackView release];
     [_firstTwoLinesStackView release];
     [_numberSystemStackView release];
+    
+    [_buttonsWichDisableIfBinCollection release];
+    [_allButtonsOutletCollection release];
+    [_buttonsWhichDesebleIfOctCollection release];
+    [_buttonWhichDesebleIfHexCollection release];
+    [_forHexLettersButtonsStackView release];
     [super dealloc];
 }
 
