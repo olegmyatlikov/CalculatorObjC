@@ -83,7 +83,7 @@ static NSString * const CalculatorDotSymbol = @".";
         _displayLabel.text = sender.currentTitle;
     }
     
-    self.calculatorModel.operand = self.displayLabel.text.doubleValue;
+    self.calculatorModel.strOperand = self.displayLabel.text;
 }
 
 

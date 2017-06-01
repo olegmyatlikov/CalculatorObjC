@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84066BF81EDD586F004A64E3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BF71EDD586F004A64E3 /* Constants.m */; };
+		84066BFB1EDE8788004A64E3 /* HexNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFA1EDE8788004A64E3 /* HexNumeralSystemDelegate.m */; };
+		84066BFE1EDE8810004A64E3 /* OctNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFD1EDE8810004A64E3 /* OctNumeralSystemDelegate.m */; };
+		84066C011EDE8830004A64E3 /* BinNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C001EDE8830004A64E3 /* BinNumeralSystemDelegate.m */; };
+		84066C041EDE8840004A64E3 /* DecNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C031EDE8840004A64E3 /* DecNumeralSystemDelegate.m */; };
 		846021C61EC8524700C11C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021C51EC8524700C11C01 /* main.m */; };
 		846021C91EC8524700C11C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021C81EC8524700C11C01 /* AppDelegate.m */; };
 		846021CC1EC8524700C11C01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021CB1EC8524700C11C01 /* ViewController.m */; };
@@ -21,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84066BF61EDD586F004A64E3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
+		84066BF71EDD586F004A64E3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../Constants.m; sourceTree = "<group>"; };
+		84066BF91EDE8788004A64E3 /* HexNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexNumeralSystemDelegate.h; sourceTree = "<group>"; };
+		84066BFA1EDE8788004A64E3 /* HexNumeralSystemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexNumeralSystemDelegate.m; sourceTree = "<group>"; };
+		84066BFC1EDE8810004A64E3 /* OctNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctNumeralSystemDelegate.h; sourceTree = "<group>"; };
+		84066BFD1EDE8810004A64E3 /* OctNumeralSystemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OctNumeralSystemDelegate.m; sourceTree = "<group>"; };
+		84066BFF1EDE8830004A64E3 /* BinNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinNumeralSystemDelegate.h; sourceTree = "<group>"; };
+		84066C001EDE8830004A64E3 /* BinNumeralSystemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinNumeralSystemDelegate.m; sourceTree = "<group>"; };
+		84066C021EDE8840004A64E3 /* DecNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecNumeralSystemDelegate.h; sourceTree = "<group>"; };
+		84066C031EDE8840004A64E3 /* DecNumeralSystemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecNumeralSystemDelegate.m; sourceTree = "<group>"; };
 		846021C11EC8524700C11C01 /* CalculatorObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846021C51EC8524700C11C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846021C71EC8524700C11C01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,10 +86,20 @@
 		846021C31EC8524700C11C01 /* CalculatorObjC */ = {
 			isa = PBXGroup;
 			children = (
+				84066BF61EDD586F004A64E3 /* Constants.h */,
+				84066BF71EDD586F004A64E3 /* Constants.m */,
 				846021C71EC8524700C11C01 /* AppDelegate.h */,
 				846021C81EC8524700C11C01 /* AppDelegate.m */,
 				84DA15021ED027BF001780BC /* CalculatorModel.h */,
 				84DA15031ED027BF001780BC /* CalculatorModel.m */,
+				84066BF91EDE8788004A64E3 /* HexNumeralSystemDelegate.h */,
+				84066BFA1EDE8788004A64E3 /* HexNumeralSystemDelegate.m */,
+				84066BFC1EDE8810004A64E3 /* OctNumeralSystemDelegate.h */,
+				84066BFD1EDE8810004A64E3 /* OctNumeralSystemDelegate.m */,
+				84066BFF1EDE8830004A64E3 /* BinNumeralSystemDelegate.h */,
+				84066C001EDE8830004A64E3 /* BinNumeralSystemDelegate.m */,
+				84066C021EDE8840004A64E3 /* DecNumeralSystemDelegate.h */,
+				84066C031EDE8840004A64E3 /* DecNumeralSystemDelegate.m */,
 				846021CA1EC8524700C11C01 /* ViewController.h */,
 				846021CB1EC8524700C11C01 /* ViewController.m */,
 				846021CD1EC8524700C11C01 /* Main.storyboard */,
@@ -200,8 +225,13 @@
 				84A5DD2E1ECDC57E0055F834 /* AboutUsViewController.m in Sources */,
 				84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */,
 				846021CC1EC8524700C11C01 /* ViewController.m in Sources */,
+				84066BFE1EDE8810004A64E3 /* OctNumeralSystemDelegate.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
+				84066BFB1EDE8788004A64E3 /* HexNumeralSystemDelegate.m in Sources */,
+				84066C011EDE8830004A64E3 /* BinNumeralSystemDelegate.m in Sources */,
 				846021C61EC8524700C11C01 /* main.m in Sources */,
+				84066BF81EDD586F004A64E3 /* Constants.m in Sources */,
+				84066C041EDE8840004A64E3 /* DecNumeralSystemDelegate.m in Sources */,
 				84DA15041ED027BF001780BC /* CalculatorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
