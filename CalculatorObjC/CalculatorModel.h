@@ -8,11 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol CalculatorModelDelegate;
+
+
 @interface CalculatorModel : NSObject
 
-@property (assign, nonatomic) double operand;
+@property (retain, nonatomic) NSString *strOperand;
 @property (retain, nonatomic, readonly) NSString *displayResult;
+@property (retain, nonatomic) NSString *numeralSystem;
+@property (assign, nonatomic) id <CalculatorModelDelegate> delegate;
 
 - (void)performOperation:(NSString *)operation;
+
+@end
+
+
+@protocol CalculatorModelDelegate <NSObject>
+
+- (double)convertOperandToDecimal:(NSString*)operand;
+- (NSString*)converResult:(NSString*)dispalyResult;
 
 @end

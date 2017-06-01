@@ -10,6 +10,7 @@
 
 @interface CalculatorModel()
 
+@property (assign, nonatomic) double operand;
 @property (assign, nonatomic) double accumulator;
 @property (assign, nonatomic) double result;
 @property (retain, nonatomic, readwrite) NSString *displayResult;
@@ -59,8 +60,9 @@ static NSString * CalculatorNanErrorMessege = @"nan";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
+        _numeralSystem = @"dec";
         
-        _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
+        binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
             return firstValue + secondValue;
         },
                             CalculatorMinusOperation : ^ double (double firstValue, double secondValue) {
@@ -103,6 +105,11 @@ static NSString * CalculatorNanErrorMessege = @"nan";
     _operand = operand;
     self.result = operand;
     self.haveSecondOperand = YES;
+}
+
+- (void)setStrOperand:(NSString *)strOperand {
+    _strOperand = strOperand;
+    self.operand = self.strOperand.doubleValue;
 }
 
 - (void)setResult:(double)result {
