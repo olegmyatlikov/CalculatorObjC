@@ -62,7 +62,7 @@ static NSString * CalculatorNanErrorMessege = @"nan";
         _displayResult = CalculatorZeroValue;
         _numeralSystem = @"dec";
         
-        binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
+        _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
             return firstValue + secondValue;
         },
                             CalculatorMinusOperation : ^ double (double firstValue, double secondValue) {

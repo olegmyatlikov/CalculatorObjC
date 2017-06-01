@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84066BF81EDD586F004A64E3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BF71EDD586F004A64E3 /* Constants.m */; };
 		84066BFB1EDE8788004A64E3 /* HexNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFA1EDE8788004A64E3 /* HexNumeralSystemDelegate.m */; };
 		84066BFE1EDE8810004A64E3 /* OctNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFD1EDE8810004A64E3 /* OctNumeralSystemDelegate.m */; };
 		84066C011EDE8830004A64E3 /* BinNumeralSystemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C001EDE8830004A64E3 /* BinNumeralSystemDelegate.m */; };
@@ -26,8 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84066BF61EDD586F004A64E3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
-		84066BF71EDD586F004A64E3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../Constants.m; sourceTree = "<group>"; };
 		84066BF91EDE8788004A64E3 /* HexNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexNumeralSystemDelegate.h; sourceTree = "<group>"; };
 		84066BFA1EDE8788004A64E3 /* HexNumeralSystemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexNumeralSystemDelegate.m; sourceTree = "<group>"; };
 		84066BFC1EDE8810004A64E3 /* OctNumeralSystemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctNumeralSystemDelegate.h; sourceTree = "<group>"; };
@@ -86,8 +83,6 @@
 		846021C31EC8524700C11C01 /* CalculatorObjC */ = {
 			isa = PBXGroup;
 			children = (
-				84066BF61EDD586F004A64E3 /* Constants.h */,
-				84066BF71EDD586F004A64E3 /* Constants.m */,
 				846021C71EC8524700C11C01 /* AppDelegate.h */,
 				846021C81EC8524700C11C01 /* AppDelegate.m */,
 				84DA15021ED027BF001780BC /* CalculatorModel.h */,
@@ -230,7 +225,6 @@
 				84066BFB1EDE8788004A64E3 /* HexNumeralSystemDelegate.m in Sources */,
 				84066C011EDE8830004A64E3 /* BinNumeralSystemDelegate.m in Sources */,
 				846021C61EC8524700C11C01 /* main.m in Sources */,
-				84066BF81EDD586F004A64E3 /* Constants.m in Sources */,
 				84066C041EDE8840004A64E3 /* DecNumeralSystemDelegate.m in Sources */,
 				84DA15041ED027BF001780BC /* CalculatorModel.m in Sources */,
 			);
