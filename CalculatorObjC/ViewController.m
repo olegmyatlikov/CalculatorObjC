@@ -27,6 +27,9 @@
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsWichDisableIfBinCollection;
 
 
+@property (retain, nonatomic) IBOutlet UIButton *DELETE;
+
+
 @end
 
 
@@ -170,6 +173,7 @@ static NSString * const CalculatorBinNumeralSystem = @"bin";
     [_buttonsWhichDesebleIfOctCollection release];
     [_buttonWhichDesebleIfHexCollection release];
     [_forHexLettersButtonsStackView release];
+    [_DELETE release];
     [super dealloc];
 }
 
