@@ -15,6 +15,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 @property (retain, nonatomic) CalculatorModel *calculatorModel;
+
 @property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
@@ -35,9 +36,6 @@
 
 static NSString * const CalculatorZeroValue = @"0";
 static NSString * const CalculatorDotSymbol = @".";
-static NSString * const CalculatorHexNumeralSystem = @"hex";
-static NSString * const CalculatorOctNumeralSystem = @"oct";
-static NSString * const CalculatorBinNumeralSystem = @"bin";
 
 
 #pragma mark - methods
@@ -143,6 +141,7 @@ static NSString * const CalculatorBinNumeralSystem = @"bin";
         [self enableAllButtons];
     }
     
+    self.calculatorModel.numeralSystem = sender.currentTitle;
 }
 
 
