@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const CalculatorHexNumeralSystem;
+extern NSString * const CalculatorOctNumeralSystem;
+extern NSString *const CalculatorBinNumeralSystem;
+
+
 @protocol CalculatorModelDelegate;
 
 

@@ -7,6 +7,10 @@
 //
 
 #import "CalculatorModel.h"
+#import "HexNumeralSystemDelegate.h"
+#import "DecNumeralSystemDelegate.h"
+#import "OctNumeralSystemDelegate.h"
+#import "BinNumeralSystemDelegate.h"
 
 @interface CalculatorModel()
 
@@ -51,6 +55,9 @@ static NSString * CalculatorErrorMessege = @"Error";
 static NSString * CalculatorInfErrorMessege = @"inf";
 static NSString * CalculatorNanErrorMessege = @"nan";
 
+NSString *const CalculatorHexNumeralSystem = @"hex";
+NSString * const CalculatorOctNumeralSystem = @"oct";
+NSString * const CalculatorBinNumeralSystem = @"bin";
 
 #pragma mark - custom init
 
@@ -132,8 +139,16 @@ static NSString * CalculatorNanErrorMessege = @"nan";
     }
 }
 
+- (void) choseNumeralSystem {
+    if (self.numeralSystem == CalculatorBinNumeralSystem) {
+        //self.delegate = he
+    }
+}
+
 
 - (void)performOperation:(NSString *)operation {
+    
+    [self choseNumeralSystem];
     
     if (self.binaryOperations[operation]) {
         if (self.haveDeferredOperation && self.haveSecondOperand) {
@@ -168,6 +183,16 @@ static NSString * CalculatorNanErrorMessege = @"nan";
     [self checkErrors];
     
 }
+
+
+#pragma mark - lazy getters 
+
+//- (HexNumeralSystemDelegate*)hexNumSysDelegate {
+////    if () {
+////        
+////    }
+//}
+
 
 
 - (void)dealloc {
