@@ -608,7 +608,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="DELETE" destination="ThN-2O-mv8" id="iVe-ct-Z0i"/>
                         <outlet property="allButtonsStackView" destination="ejg-HC-0zM" id="WOd-8x-LOb"/>
                         <outlet property="displayLabel" destination="UHD-bW-dH5" id="Kbh-3r-OTx"/>
                         <outlet property="firstTwoLinesStackView" destination="n4p-oa-NbP" id="K68-sL-ILN"/>
