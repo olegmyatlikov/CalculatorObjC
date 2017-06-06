@@ -1,22 +1,22 @@
 //
-//  BinNumeralSystemDelegate.m
+//  BinNumeralSystem.m
 //  CalculatorObjC
 //
 //  Created by Admin on 31.05.17.
 //  Copyright © 2017 Oleg Myatlikov. All rights reserved.
 //
 
-#import "BinNumeralSystemDelegate.h"
+#import "BinNumeralSystem.h"
 
-@implementation BinNumeralSystemDelegate
+@implementation BinNumeralSystem
 
-- (double)convertOperandToDecimal:(NSString*)operand {
+- (double)convertOperandToDecimal:(NSString *)operand {
     long decLongOperand;
     decLongOperand = strtol(operand.UTF8String, nil, 2);
     return (double)decLongOperand;
 }
 
-- (NSString*)converResult:(NSString*)dispalyResult {
+- (NSString *)converResult:(NSString *)dispalyResult {
     
     NSInteger value = dispalyResult.integerValue;
     NSMutableString *resultString = [NSMutableString string];

@@ -7,10 +7,10 @@
 //
 
 #import "CalculatorModel.h"
-#import "HexNumeralSystemDelegate.h"
-#import "DecNumeralSystemDelegate.h"
-#import "OctNumeralSystemDelegate.h"
-#import "BinNumeralSystemDelegate.h"
+#import "HexNumeralSystem.h"
+#import "DecNumeralSystem.h"
+#import "OctNumeralSystem.h"
+#import "BinNumeralSystem.h"
 
 @interface CalculatorModel()
 
@@ -26,6 +26,12 @@
 @property (retain, nonatomic) NSDictionary *unaryOperations;
 @property (retain, nonatomic) NSDictionary *constants;
 @property (copy, nonatomic) double (^reservedOperation)(double, double);
+
+@property (retain, nonatomic) id <NumeralSystemProtocol> numeralSystem;
+@property (retain, nonatomic) DecNumeralSystem *decNumeralSystem;
+@property (retain, nonatomic) BinNumeralSystem *binNumeralSystem;
+@property (retain, nonatomic) OctNumeralSystem *octNumeralSystem;
+@property (retain, nonatomic) HexNumeralSystem *hexNumeralSystem;
 
 @end
 
@@ -55,7 +61,7 @@ static NSString * CalculatorErrorMessege = @"Error";
 static NSString * CalculatorInfErrorMessege = @"inf";
 static NSString * CalculatorNanErrorMessege = @"nan";
 
-NSString *const CalculatorHexNumeralSystem = @"hex";
+NSString * const CalculatorHexNumeralSystem = @"hex";
 NSString * const CalculatorOctNumeralSystem = @"oct";
 NSString * const CalculatorBinNumeralSystem = @"bin";
 
@@ -67,7 +73,8 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
-        _numeralSystem = @"dec";
+        
+        //_numeralSystem = self.decNumeralSystem;
         
         _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
             return firstValue + secondValue;
@@ -139,16 +146,21 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
     }
 }
 
-- (void) choseNumeralSystem {
-    if (self.numeralSystem == CalculatorBinNumeralSystem) {
-        //self.delegate = he
+- (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem {
+    if ([nameNumeralSystem isEqual:CalculatorBinNumeralSystem]) {
+        self.numeralSystem = self.binNumeralSystem;
+    } else if ([nameNumeralSystem isEqual:CalculatorOctNumeralSystem]) {
+        self.numeralSystem = self.octNumeralSystem;
+    } else if ([nameNumeralSystem isEqual:CalculatorHexNumeralSystem]) {
+        self.numeralSystem = self.hexNumeralSystem;
+    } else {
+        self.numeralSystem = self.decNumeralSystem;
     }
 }
 
 
 - (void)performOperation:(NSString *)operation {
     
-    [self choseNumeralSystem];
     
     if (self.binaryOperations[operation]) {
         if (self.haveDeferredOperation && self.haveSecondOperand) {
@@ -185,22 +197,51 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
 }
 
 
-#pragma mark - lazy getters 
+#pragma mark - lazy getters for numeral systems
 
-//- (HexNumeralSystemDelegate*)hexNumSysDelegate {
-////    if () {
-////        
-////    }
-//}
+- (DecNumeralSystem *)decNumeralSystem {
+    if (!_decNumeralSystem) {
+        _decNumeralSystem = [[DecNumeralSystem alloc] init];
+    }
+    return _decNumeralSystem;
+}
+
+- (BinNumeralSystem *)binNumeralSystem {
+    if (!_binNumeralSystem) {
+        _binNumeralSystem = [[BinNumeralSystem alloc] init];
+    }
+    return _binNumeralSystem;
+}
+
+- (OctNumeralSystem *)octNumeralSystem {
+    if (!_octNumeralSystem) {
+        _octNumeralSystem = [[OctNumeralSystem alloc] init];
+    }
+    return _octNumeralSystem;
+}
+
+- (HexNumeralSystem *)hexNumeralSystem {
+    if (!_hexNumeralSystem) {
+        _hexNumeralSystem = [[HexNumeralSystem alloc] init];
+    }
+    return _hexNumeralSystem;
+}
 
 
+#pragma mark - dealloc
 
 - (void)dealloc {
     [_displayResult release];
     [_binaryOperations release];
     [_unaryOperations release];
     [_constants release];
-    [_reservedOperation release]; 
+    [_reservedOperation release];
+    [_strOperand release];
+    [_numeralSystem release];
+    [_decNumeralSystem release];
+    [_binNumeralSystem release];
+    [_octNumeralSystem release];
+    [_hexNumeralSystem release];
     [super dealloc];
 }
 
