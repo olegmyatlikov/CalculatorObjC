@@ -10,25 +10,24 @@
 
 extern NSString * const CalculatorHexNumeralSystem;
 extern NSString * const CalculatorOctNumeralSystem;
-extern NSString *const CalculatorBinNumeralSystem;
+extern NSString * const CalculatorBinNumeralSystem;
 
 
-@protocol CalculatorModelDelegate;
+@protocol NumeralSystemProtocol;
 
 
 @interface CalculatorModel : NSObject
 
 @property (retain, nonatomic) NSString *strOperand;
 @property (retain, nonatomic, readonly) NSString *displayResult;
-@property (retain, nonatomic) NSString *numeralSystem;
-@property (assign, nonatomic) id <CalculatorModelDelegate> delegate;
 
 - (void)performOperation:(NSString *)operation;
+- (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem;
 
 @end
 
 
-@protocol CalculatorModelDelegate <NSObject>
+@protocol NumeralSystemProtocol <NSObject>
 
 - (double)convertOperandToDecimal:(NSString*)operand;
 - (NSString*)converResult:(NSString*)dispalyResult;

@@ -141,13 +141,13 @@ static NSString * const CalculatorDotSymbol = @".";
         [self enableAllButtons];
     }
     
-    self.calculatorModel.numeralSystem = sender.currentTitle;
+    [self.calculatorModel applyNumeralSystemByName:sender.currentTitle];
 }
 
 
 // Lazy getter
 
-- (CalculatorModel*)calculatorModel {
+- (CalculatorModel *)calculatorModel {
     if (!_calculatorModel) {
         _calculatorModel = [[CalculatorModel alloc] init];
     }
