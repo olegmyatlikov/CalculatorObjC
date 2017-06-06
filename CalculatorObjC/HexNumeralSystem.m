@@ -11,16 +11,14 @@
 @implementation HexNumeralSystem
 
 - (double)convertOperandToDecimal:(NSString *)operand {
-    NSScanner* pScanner = [NSScanner scannerWithString: operand];
-    //[pScanner setScanLocation:1]; // bypass '#' character
+    NSScanner* pScanner = [NSScanner scannerWithString:operand];
     unsigned int iValue;
     [pScanner scanHexInt: &iValue];
     return (double)iValue;
 }
 
 - (NSString *)converResult:(NSString *)dispalyResult {
-    return [NSString stringWithFormat:@"0x%lX",
-            (unsigned long)[dispalyResult doubleValue]];
+    return [NSString stringWithFormat:@"%llX", [dispalyResult longLongValue]];
 }
 
 @end
