@@ -17,15 +17,16 @@
 }
 
 - (NSString *)converResult:(NSString *)dispalyResult {
-    
     NSInteger value = dispalyResult.integerValue;
     NSMutableString *resultString = [NSMutableString string];
+    if (value == 0) {
+        [resultString setString:@"0"]; // fix AC pressed
+    }
     while (value)
     {
         [resultString insertString:(value & 1)? @"1": @"0" atIndex:0];
         value /= 2;
     }
-    
     return resultString;
 }
 

@@ -73,8 +73,8 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
-        
-        //_numeralSystem = self.decNumeralSystem;
+        _numeralSystem = [self.decNumeralSystem retain];
+        _strOperand = @"0";
         
         _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
             return firstValue + secondValue;
@@ -113,7 +113,7 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
 }
 
 
-#pragma mark - methods
+#pragma mark - setters
 
 - (void)setOperand:(double) operand {
     _operand = operand;
@@ -121,15 +121,17 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
     self.haveSecondOperand = YES;
 }
 
-- (void)setStrOperand:(NSString *)strOperand {
-    _strOperand = strOperand;
-    self.operand = self.strOperand.doubleValue;
+- (void)setStrOperand:(NSString *)strOperand { 
+    _strOperand = [strOperand copy];
+    self.operand = [self.numeralSystem convertOperandToDecimal:self.strOperand];
+    //self.operand = self.strOperand.doubleValue;
 }
 
 - (void)setResult:(double)result {
     _result = result;
-    self.displayResult = [NSString stringWithFormat:@"%g", result];
 }
+
+#pragma mark - methods
 
 - (void)calcIfItPostponedOperation {
     self.result = self.reservedOperation(self.accumulator, self.operand);
@@ -161,6 +163,7 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
 
 - (void)performOperation:(NSString *)operation {
     
+    //_operand = [self.numeralSystem convertOperandToDecimal:self.strOperand];
     
     if (self.binaryOperations[operation]) {
         if (self.haveDeferredOperation && self.haveSecondOperand) {
@@ -189,9 +192,9 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
         self.operand = 0;
         self.reservedOperation = nil;
         self.haveDeferredOperation = NO;
-        
     }
     
+    self.displayResult = [self.numeralSystem converResult:[NSString stringWithFormat:@"%g", self.result]];
     [self checkErrors];
     
 }

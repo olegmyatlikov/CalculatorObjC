@@ -11,15 +11,12 @@
 @implementation OctNumeralSystem
 
 - (double)convertOperandToDecimal:(NSString *)operand {
-    int intOperand = [operand intValue];
-    NSString *octalString = [NSString stringWithFormat:@"%o", intOperand];
-    return octalString.doubleValue;
+    return strtol(operand.UTF8String, nil, 8);
 }
 
 - (NSString *)converResult:(NSString *)dispalyResult {
-    long octLongResult;
-    octLongResult = strtol(dispalyResult.UTF8String, nil, 8);
-    return [NSString stringWithFormat:@"%ld", octLongResult];
+    int octResultInInt = [dispalyResult intValue];
+    return [NSString stringWithFormat:@"%o", octResultInInt];
 }
 
 @end

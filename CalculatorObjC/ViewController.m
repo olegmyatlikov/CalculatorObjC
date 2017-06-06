@@ -15,6 +15,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 @property (retain, nonatomic) CalculatorModel *calculatorModel;
+@property (retain, nonatomic) NSString *numeralSystem;
 
 @property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
@@ -101,8 +102,8 @@ static NSString * const CalculatorDotSymbol = @".";
     if (self.userMiddleOfTyping) {
         self.displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
     } else {
-        if (![sender.currentTitle isEqual:CalculatorZeroValue]) {
-            self.userMiddleOfTyping = YES; // fix case when 0 add to 0 (00001)
+        if (![sender.currentTitle isEqual:CalculatorZeroValue] || [self.numeralSystem isEqual: CalculatorBinNumeralSystem]) { // fix case when 0 add to 0 (00001) and unfix if binary
+            self.userMiddleOfTyping = YES;
         }
         _displayLabel.text = sender.currentTitle;
     }
@@ -141,6 +142,7 @@ static NSString * const CalculatorDotSymbol = @".";
         [self enableAllButtons];
     }
     
+    self.numeralSystem = sender.currentTitle;
     [self.calculatorModel applyNumeralSystemByName:sender.currentTitle];
 }
 
