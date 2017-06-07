@@ -16,6 +16,8 @@
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
 @property (retain, nonatomic) CalculatorModel *calculatorModel;
 @property (retain, nonatomic) NSString *numeralSystem;
+@property (retain, nonatomic) IBOutlet UILabel *numeralSystemLabel;
+
 
 @property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
@@ -47,7 +49,10 @@ static NSString * const CalculatorDotSymbol = @".";
     swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
     [swipeOnDispalyRecognizer release];
+    self.numeralSystemLabel.text = CalculatorDecNumeralSystem;
     self.forHexLettersButtonsStackView.hidden = YES;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeDisplayResult) name:@"resultDidChange" object:nil];
 }
 
 - (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
@@ -96,13 +101,17 @@ static NSString * const CalculatorDotSymbol = @".";
     self.forHexLettersButtonsStackView.hidden = YES;
 }
 
+- (void)changeDisplayResult {
+    self.displayLabel.text = self.calculatorModel.displayResult;
+}
+
 #pragma mark - tapping on the calc's button
 
 - (IBAction)digitButtonPressed:(UIButton *)sender {
     if (self.userMiddleOfTyping) {
         self.displayLabel.text = [self.displayLabel.text stringByAppendingString: sender.currentTitle];
     } else {
-        if (![sender.currentTitle isEqual:CalculatorZeroValue] || [self.numeralSystem isEqual: CalculatorBinNumeralSystem]) { // fix case when 0 add to 0 (00001) and unfix if binary
+        if (![sender.currentTitle isEqual:CalculatorZeroValue] || [self.numeralSystemLabel.text isEqual: CalculatorBinNumeralSystem]) { // fix case when 0 add to 0 (00001) and unfix if binary
             self.userMiddleOfTyping = YES;
         }
         _displayLabel.text = sender.currentTitle;
@@ -119,15 +128,12 @@ static NSString * const CalculatorDotSymbol = @".";
     }
 }
 
-
 - (IBAction)operationButtonPressed:(UIButton *)sender {
     if (self.userMiddleOfTyping) {
         self.userMiddleOfTyping = NO;
     }
     [self.calculatorModel performOperation:sender.currentTitle];
-    self.displayLabel.text = self.calculatorModel.displayResult;
 }
-
 
 - (IBAction)numeralSystemButtonPressed:(UIButton *)sender {
     
@@ -142,7 +148,7 @@ static NSString * const CalculatorDotSymbol = @".";
         [self enableAllButtons];
     }
     
-    self.numeralSystem = sender.currentTitle;
+    self.numeralSystemLabel.text = sender.currentTitle;
     [self.calculatorModel applyNumeralSystemByName:sender.currentTitle];
 }
 
@@ -170,6 +176,7 @@ static NSString * const CalculatorDotSymbol = @".";
     [_buttonsWhichDesebleIfOctCollection release];
     [_buttonWhichDesebleIfHexCollection release];
     [_forHexLettersButtonsStackView release];
+    [_numeralSystemLabel release];
     [super dealloc];
 }
 

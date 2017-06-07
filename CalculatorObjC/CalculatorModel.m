@@ -64,6 +64,7 @@ static NSString * CalculatorNanErrorMessege = @"nan";
 NSString * const CalculatorHexNumeralSystem = @"hex";
 NSString * const CalculatorOctNumeralSystem = @"oct";
 NSString * const CalculatorBinNumeralSystem = @"bin";
+NSString * const CalculatorDecNumeralSystem = @"dec";
 
 #pragma mark - custom init
 
@@ -124,11 +125,20 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
 - (void)setStrOperand:(NSString *)strOperand { 
     _strOperand = [strOperand copy];
     self.operand = [self.numeralSystem convertOperandToDecimal:self.strOperand];
-    //self.operand = self.strOperand.doubleValue;
 }
 
 - (void)setResult:(double)result {
     _result = result;
+}
+
+-(void)setNumeralSystem:(id<NumeralSystemProtocol>)numeralSystem {
+    _numeralSystem = numeralSystem;
+    self.displayResult = [self.numeralSystem converResult:[NSString stringWithFormat:@"%g", self.result]];
+}
+
+- (void)setDisplayResult:(NSString *)displayResult {
+    _displayResult = displayResult;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"resultDidChange" object:nil];
 }
 
 #pragma mark - methods
@@ -162,8 +172,6 @@ NSString * const CalculatorBinNumeralSystem = @"bin";
 
 
 - (void)performOperation:(NSString *)operation {
-    
-    //_operand = [self.numeralSystem convertOperandToDecimal:self.strOperand];
     
     if (self.binaryOperations[operation]) {
         if (self.haveDeferredOperation && self.haveSecondOperand) {

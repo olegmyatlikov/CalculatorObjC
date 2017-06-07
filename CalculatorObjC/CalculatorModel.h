@@ -11,6 +11,7 @@
 extern NSString * const CalculatorHexNumeralSystem;
 extern NSString * const CalculatorOctNumeralSystem;
 extern NSString * const CalculatorBinNumeralSystem;
+extern NSString * const CalculatorDecNumeralSystem;
 
 
 @protocol NumeralSystemProtocol;
