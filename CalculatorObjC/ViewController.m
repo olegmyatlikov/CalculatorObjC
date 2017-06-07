@@ -18,12 +18,9 @@
 @property (retain, nonatomic) NSString *numeralSystem;
 @property (retain, nonatomic) IBOutlet UILabel *numeralSystemLabel;
 
-
 @property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
-@property (retain, nonatomic) IBOutlet UIStackView *generalStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
-@property (retain, nonatomic) IBOutlet UIStackView *firstTwoLinesStackView;
-@property (retain, nonatomic) IBOutlet UIStackView *numberSystemStackView;
+@property (retain, nonatomic) IBOutlet UIStackView *numeralSystemStackView;
 
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *allButtonsOutletCollection;
 @property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonWhichDesebleIfHexCollection;
@@ -41,7 +38,7 @@ static NSString * const CalculatorZeroValue = @"0";
 static NSString * const CalculatorDotSymbol = @".";
 
 
-#pragma mark - methods
+#pragma mark - viewDidLoad
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,24 +52,15 @@ static NSString * const CalculatorDotSymbol = @".";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeDisplayResult) name:@"resultDidChange" object:nil];
 }
 
+
+#pragma mark - general methods
+
 - (void)handleSwipeRecognizer:(UIGestureRecognizerState *)recognizer {
     if ([self.displayLabel.text length] > 1) {
         self.displayLabel.text = [self.displayLabel.text substringToIndex:[self.displayLabel.text length] - 1];
     } else {
         self.displayLabel.text = CalculatorZeroValue;
         self.userMiddleOfTyping = NO;
-    }
-}
-
-- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
-        [self.firstTwoLinesStackView removeArrangedSubview:self.firstTwoLinesStackView.arrangedSubviews[0]];
-        self.numberSystemStackView.axis = UILayoutConstraintAxisVertical;
-        [self.generalStackView insertArrangedSubview:self.numberSystemStackView atIndex:0];
-    } else {
-        [self.generalStackView removeArrangedSubview:self.generalStackView.arrangedSubviews[0]];
-        self.numberSystemStackView.axis = UILayoutConstraintAxisHorizontal;
-        [self.firstTwoLinesStackView insertArrangedSubview:self.numberSystemStackView atIndex:0];
     }
 }
 
@@ -104,6 +92,22 @@ static NSString * const CalculatorDotSymbol = @".";
 - (void)changeDisplayResult {
     self.displayLabel.text = self.calculatorModel.displayResult;
 }
+
+
+#pragma mark - change rotation
+
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    if (newCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
+        self.allButtonsStackView.axis = UILayoutConstraintAxisHorizontal;
+        self.numeralSystemStackView.axis = UILayoutConstraintAxisVertical;
+        self.forHexLettersButtonsStackView.axis = UILayoutConstraintAxisVertical;
+    } else {
+        self.allButtonsStackView.axis = UILayoutConstraintAxisVertical;
+        self.numeralSystemStackView.axis = UILayoutConstraintAxisHorizontal;
+        self.forHexLettersButtonsStackView.axis = UILayoutConstraintAxisHorizontal;
+    }
+}
+
 
 #pragma mark - tapping on the calc's button
 
@@ -166,11 +170,8 @@ static NSString * const CalculatorDotSymbol = @".";
 - (void)dealloc {
     [_calculatorModel release];
     [_displayLabel release];
-    [_generalStackView release];
     [_allButtonsStackView release];
-    [_firstTwoLinesStackView release];
-    [_numberSystemStackView release];
-    
+    [_numeralSystemStackView release];
     [_buttonsWichDisableIfBinCollection release];
     [_allButtonsOutletCollection release];
     [_buttonsWhichDesebleIfOctCollection release];

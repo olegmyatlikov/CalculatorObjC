@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYR-yw-XKv">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-bW-dH5">
-                                <rect key="frame" x="16" y="84" width="342" height="219"/>
+                                <rect key="frame" x="16" y="84" width="286.5" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Cqd-d5-XK8"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57H-Z3-XsK">
-                                <rect key="frame" x="85" y="637" width="205" height="20"/>
+                                <rect key="frame" x="57.5" y="538" width="205" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="u7v-2H-Nqq"/>
                                 </constraints>
@@ -45,80 +45,169 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-sY-eXW" userLabel="generalStackView">
-                                <rect key="frame" x="16" y="313" width="343" height="314"/>
+                                <rect key="frame" x="16" y="173" width="288" height="355"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ejg-HC-0zM" userLabel="allButtonsStackView">
-                                        <rect key="frame" x="0.0" y="0.0" width="291" height="314"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="355"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-oa-NbP" userLabel="firstTwoLinesStackView">
-                                                <rect key="frame" x="0.0" y="0.0" width="291" height="98"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KG6-Yy-zB1" userLabel="numeralSystemLineStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="39"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KG6-Yy-zB1" userLabel="numberSystemLineStackView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="291" height="44"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMH-hn-ivn">
-                                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
-                                                                <state key="normal" title="hex">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWs-hz-bt8"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-3d-chr">
-                                                                <rect key="frame" x="75.5" y="0.0" width="65" height="44"/>
-                                                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
-                                                                <state key="normal" title="dec">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inT-nN-3w1"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bZ-XG-QEW">
-                                                                <rect key="frame" x="150.5" y="0.0" width="65.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
-                                                                <state key="normal" title="oct">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CY-nn-xqC"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-hr-W1Q">
-                                                                <rect key="frame" x="226" y="0.0" width="65" height="44"/>
-                                                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
-                                                                <state key="normal" title="bin">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jK-85-iP2"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="462-g8-oRV" userLabel="lineWithACStackView">
-                                                        <rect key="frame" x="0.0" y="54" width="291" height="44"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMH-hn-ivn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                        <state key="normal" title="hex">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWs-hz-bt8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-3d-chr">
+                                                        <rect key="frame" x="74.5" y="0.0" width="64.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                        <state key="normal" title="dec">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inT-nN-3w1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bZ-XG-QEW">
+                                                        <rect key="frame" x="149" y="0.0" width="64.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                        <state key="normal" title="oct">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9CY-nn-xqC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-hr-W1Q">
+                                                        <rect key="frame" x="223.5" y="0.0" width="64.5" height="39"/>
+                                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                        <state key="normal" title="bin">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numeralSystemButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jK-85-iP2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1OA-a0-vhP" userLabel="forHexLettersButtons">
+                                                <rect key="frame" x="0.0" y="49" width="288" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-KC-hPZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="A">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUt-Rf-ANT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-2O-mv8">
+                                                        <rect key="frame" x="49.5" y="0.0" width="40" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="B">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEe-8B-kcD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-iL-hoT">
+                                                        <rect key="frame" x="99.5" y="0.0" width="39.5" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQM-16-0sk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ9-T9-xb0">
+                                                        <rect key="frame" x="149" y="0.0" width="39.5" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="D">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRO-e8-2Ve"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVX-2F-zcT">
+                                                        <rect key="frame" x="198.5" y="0.0" width="40" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="E">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DlB-Ev-Y3a"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-Bv-mxS">
+                                                        <rect key="frame" x="248.5" y="0.0" width="39.5" height="36"/>
+                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <state key="normal" title="F">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFn-vI-n6V"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="14a-KB-6pn" userLabel="calculationButtonStackView">
+                                                <rect key="frame" x="0.0" y="95" width="288" height="260"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-oa-NbP" userLabel="firstLinesWithACStackView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61e-Sm-aKj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
                                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="AC">
@@ -132,7 +221,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it7-PL-C0o">
-                                                                <rect key="frame" x="60" y="0.0" width="50.5" height="44"/>
+                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="﹪">
@@ -146,7 +235,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KW-fm-zBW">
-                                                                <rect key="frame" x="120.5" y="0.0" width="50" height="44"/>
+                                                                <rect key="frame" x="119" y="0.0" width="50" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="÷">
@@ -160,7 +249,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-tC-3Zf">
-                                                                <rect key="frame" x="180.5" y="0.0" width="50.5" height="44"/>
+                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="×">
@@ -174,7 +263,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9B-uv-bbT">
-                                                                <rect key="frame" x="241" y="0.0" width="50" height="44"/>
+                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="-">
@@ -189,405 +278,316 @@
                                                             </button>
                                                         </subviews>
                                                     </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVi-T7-cX0" userLabel="secondTwoLinesStackView">
+                                                        <rect key="frame" x="0.0" y="54" width="288" height="98"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qHw-wc-rVY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-W9-lQv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="√">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRy-O2-org"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTQ-eV-qlt">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="π">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6r-xF-JRR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-kr-1h4">
+                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfK-6D-3tY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="7">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDH-ew-k2H"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="une-8w-Hfr">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="4">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLs-15-niv"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-TM-1nx">
+                                                                <rect key="frame" x="119" y="0.0" width="50" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-Xs-qnP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="8">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt8-79-eJJ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33g-r6-PH7">
+                                                                        <rect key="frame" x="0.0" y="54" width="50" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="5">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECo-qI-wqE"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-3Q-WME">
+                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWd-nk-suy">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="9">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16Y-7M-HFN"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-7A-bSc">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="6">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qy-11-os3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-oM-Crd">
+                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="98"/>
+                                                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                <state key="normal" title="+">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Cx-qQ-vNb"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-xj-QRI" userLabel="ThirdTwoLinesStackView">
+                                                        <rect key="frame" x="0.0" y="162" width="288" height="98"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-mr-amt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-1K-hZ9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="sin">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVU-Uc-aDI"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWa-Ak-Z1E">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="cos">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mu1-Ct-t32"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z8E-c1-8xd">
+                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-vV-w9Z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="1">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAS-kI-jpi"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-1v-RZ7">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="±">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyJ-hx-15I"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yIq-ob-xSi">
+                                                                <rect key="frame" x="119" y="0.0" width="50" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4i-2V-oRf">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TqH-Ma-0fT"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9P-Pb-njP">
+                                                                        <rect key="frame" x="0.0" y="54" width="50" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="0">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2Q-K7-tea"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-aC-gan">
+                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="98"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-jK-DeF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxn-yt-880"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cM-5F-FgL">
+                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        </state>
+                                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                        </variation>
+                                                                        <connections>
+                                                                            <action selector="dotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acq-De-ol9"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Og-w08">
+                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="98"/>
+                                                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                                                                <state key="normal" title="=">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <variation key="heightClass=compact-widthClass=compact">
+                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                                </variation>
+                                                                <connections>
+                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfA-qv-lHa"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qVi-T7-cX0" userLabel="secondTwoLinesStackView">
-                                                <rect key="frame" x="0.0" y="108" width="291" height="98"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qHw-wc-rVY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-W9-lQv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="√">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRy-O2-org"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTQ-eV-qlt">
-                                                                <rect key="frame" x="0.0" y="54" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="π">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6r-xF-JRR"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-kr-1h4">
-                                                        <rect key="frame" x="60" y="0.0" width="50.5" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfK-6D-3tY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="7">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDH-ew-k2H"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="une-8w-Hfr">
-                                                                <rect key="frame" x="0.0" y="54" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="4">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLs-15-niv"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hV3-TM-1nx">
-                                                        <rect key="frame" x="120.5" y="0.0" width="50" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyi-Xs-qnP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="8">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt8-79-eJJ"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33g-r6-PH7">
-                                                                <rect key="frame" x="0.0" y="54" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="5">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ECo-qI-wqE"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-3Q-WME">
-                                                        <rect key="frame" x="180.5" y="0.0" width="50.5" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWd-nk-suy">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="9">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16Y-7M-HFN"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-7A-bSc">
-                                                                <rect key="frame" x="0.0" y="54" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="6">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qy-11-os3"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-oM-Crd">
-                                                        <rect key="frame" x="241" y="0.0" width="50" height="98"/>
-                                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                        <state key="normal" title="+">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <variation key="heightClass=compact-widthClass=compact">
-                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Cx-qQ-vNb"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-xj-QRI" userLabel="ThirdTwoLinesStackView">
-                                                <rect key="frame" x="0.0" y="216" width="291" height="98"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-mr-amt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-1K-hZ9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="sin">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVU-Uc-aDI"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWa-Ak-Z1E">
-                                                                <rect key="frame" x="0.0" y="54" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="cos">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mu1-Ct-t32"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z8E-c1-8xd">
-                                                        <rect key="frame" x="60" y="0.0" width="50.5" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-vV-w9Z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="1">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAS-kI-jpi"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-1v-RZ7">
-                                                                <rect key="frame" x="0.0" y="54" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="±">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyJ-hx-15I"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yIq-ob-xSi">
-                                                        <rect key="frame" x="120.5" y="0.0" width="50" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4i-2V-oRf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="2">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TqH-Ma-0fT"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9P-Pb-njP">
-                                                                <rect key="frame" x="0.0" y="54" width="50" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="0">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2Q-K7-tea"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-aC-gan">
-                                                        <rect key="frame" x="180.5" y="0.0" width="50.5" height="98"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-jK-DeF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="3">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gxn-yt-880"/>
-                                                                </connections>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cM-5F-FgL">
-                                                                <rect key="frame" x="0.0" y="54" width="50.5" height="44"/>
-                                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title=".">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                </state>
-                                                                <variation key="heightClass=compact-widthClass=compact">
-                                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                                </variation>
-                                                                <connections>
-                                                                    <action selector="dotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acq-De-ol9"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Og-w08">
-                                                        <rect key="frame" x="241" y="0.0" width="50" height="98"/>
-                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                        <state key="normal" title="=">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <variation key="heightClass=compact-widthClass=compact">
-                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfA-qv-lHa"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1OA-a0-vhP" userLabel="forHexLettersButtons">
-                                        <rect key="frame" x="301" y="0.0" width="42" height="314"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-KC-hPZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="A">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUt-Rf-ANT"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-2O-mv8">
-                                                <rect key="frame" x="0.0" y="54" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="B">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEe-8B-kcD"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-iL-hoT">
-                                                <rect key="frame" x="0.0" y="108" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="C">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQM-16-0sk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ9-T9-xb0">
-                                                <rect key="frame" x="0.0" y="162" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="D">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRO-e8-2Ve"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVX-2F-zcT">
-                                                <rect key="frame" x="0.0" y="216" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="E">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DlB-Ev-Y3a"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-Bv-mxS">
-                                                <rect key="frame" x="0.0" y="270" width="42" height="44"/>
-                                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
-                                                <state key="normal" title="F">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
-                                                </variation>
-                                                <connections>
-                                                    <action selector="digitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFn-vI-n6V"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDh-op-fFP">
-                                <rect key="frame" x="16" y="69" width="343" height="15"/>
+                                <rect key="frame" x="16" y="69" width="288" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="vhd-fu-3kd"/>
                                 </constraints>
@@ -622,66 +622,63 @@
                     <connections>
                         <outlet property="allButtonsStackView" destination="ejg-HC-0zM" id="WOd-8x-LOb"/>
                         <outlet property="displayLabel" destination="UHD-bW-dH5" id="Kbh-3r-OTx"/>
-                        <outlet property="firstTwoLinesStackView" destination="n4p-oa-NbP" id="K68-sL-ILN"/>
                         <outlet property="forHexLettersButtonsStackView" destination="1OA-a0-vhP" id="pwT-JL-nMV"/>
-                        <outlet property="generalStackView" destination="JS6-sY-eXW" id="5tV-oI-g2z"/>
-                        <outlet property="numberSystemStackView" destination="KG6-Yy-zB1" id="xvu-tK-iPF"/>
                         <outlet property="numeralSystemLabel" destination="oDh-op-fFP" id="7uZ-Wk-6CG"/>
-                        <outletCollection property="firstTwoLinesStackView" destination="n4p-oa-NbP" id="ugr-ro-Vh2"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="it7-PL-C0o" id="1r7-RY-FaY"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="PrD-W9-lQv" id="G0K-ev-sdo"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="wTQ-eV-qlt" id="0u7-xR-Sdn"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pV7-1K-hZ9" id="YoR-3D-ETk"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="yWa-Ak-Z1E" id="Gl4-jr-9je"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pg9-1v-RZ7" id="1Nu-PK-SFX"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="0cM-5F-FgL" id="Cec-O4-OPG"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="61e-Sm-aKj" id="1e2-Rl-y9Q"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="it7-PL-C0o" id="Swn-EE-dYy"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="9KW-fm-zBW" id="BIo-uc-kwy"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="lEf-tC-3Zf" id="kI1-fR-xEt"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="P9B-uv-bbT" id="VON-Oy-kLU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="PrD-W9-lQv" id="pc6-GE-7U0"/>
+                        <outlet property="numeralSystemStackView" destination="KG6-Yy-zB1" id="rZe-x1-5rb"/>
                         <outletCollection property="allButtonsOutletCollection" destination="XfK-6D-3tY" id="Sls-XJ-7xZ"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="gyi-Xs-qnP" id="IoI-fB-ewd"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="J2i-oM-Crd" id="rPD-J6-0Ud"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="wTQ-eV-qlt" id="hob-cP-don"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="une-8w-Hfr" id="fjx-J9-EAU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="33g-r6-PH7" id="XTy-cU-Xbp"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="pV7-1K-hZ9" id="Nlk-eR-mau"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="R4G-vV-w9Z" id="LVA-kG-sDh"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="D4i-2V-oRf" id="BoI-7N-NNP"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="gHg-jK-DeF" id="04F-PH-ONR"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="Z5K-Og-w08" id="E2Y-UK-AMn"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="yWa-Ak-Z1E" id="UhY-Ow-QLA"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="pg9-1v-RZ7" id="YpQ-8C-TwU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="x9P-Pb-njP" id="4OG-65-Zji"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="0cM-5F-FgL" id="a8w-0t-rUh"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="XfK-6D-3tY" id="ukW-JP-7fX"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gyi-Xs-qnP" id="Qa7-cm-hg5"/>
                         <outletCollection property="buttonsWichDisableIfBinCollection" destination="une-8w-Hfr" id="vR9-3J-1JI"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="33g-r6-PH7" id="I5t-f3-mZN"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gHg-jK-DeF" id="8mi-RO-ggu"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="D4i-2V-oRf" id="dO6-UN-R8o"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="it7-PL-C0o" id="wMX-A2-iWc"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="PrD-W9-lQv" id="Ffk-Vy-NYT"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="GWd-nk-suy" id="Gh6-u1-nvE"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="PrD-W9-lQv" id="pc6-GE-7U0"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="GWd-nk-suy" id="qgC-sM-Onm"/>
+                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="GWd-nk-suy" id="OuD-a1-rco"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="wTQ-eV-qlt" id="hob-cP-don"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="PrD-W9-lQv" id="G0K-ev-sdo"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="wTQ-eV-qlt" id="yNC-Yk-8SV"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="XfK-6D-3tY" id="ukW-JP-7fX"/>
                         <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="PrD-W9-lQv" id="3Wj-9c-oOf"/>
                         <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="wTQ-eV-qlt" id="R4j-fU-TZW"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="pV7-1K-hZ9" id="abe-ZU-rE9"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="yWa-Ak-Z1E" id="neS-7K-Eg0"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="TBT-7A-bSc" id="xNd-fh-gkL"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="TBT-7A-bSc" id="xUV-kS-Jrx"/>
+                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="gyi-Xs-qnP" id="vy3-5g-0Kk"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gyi-Xs-qnP" id="Qa7-cm-hg5"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="une-8w-Hfr" id="fjx-J9-EAU"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="J2i-oM-Crd" id="rPD-J6-0Ud"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="wTQ-eV-qlt" id="0u7-xR-Sdn"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="33g-r6-PH7" id="I5t-f3-mZN"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="gyi-Xs-qnP" id="IoI-fB-ewd"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="33g-r6-PH7" id="XTy-cU-Xbp"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gHg-jK-DeF" id="8mi-RO-ggu"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="x9P-Pb-njP" id="4OG-65-Zji"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="yWa-Ak-Z1E" id="ki9-eC-Dc6"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pg9-1v-RZ7" id="1Nu-PK-SFX"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="D4i-2V-oRf" id="dO6-UN-R8o"/>
                         <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="pg9-1v-RZ7" id="20X-eL-C7x"/>
                         <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="0cM-5F-FgL" id="BlN-4b-QN4"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="gyi-Xs-qnP" id="vy3-5g-0Kk"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="it7-PL-C0o" id="DrW-YK-CLB"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="PrD-W9-lQv" id="Ffk-Vy-NYT"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="wTQ-eV-qlt" id="yNC-Yk-8SV"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pV7-1K-hZ9" id="ql7-Ut-XEr"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="yWa-Ak-Z1E" id="ki9-eC-Dc6"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pg9-1v-RZ7" id="dw5-t6-5UN"/>
                         <outletCollection property="buttonWhichDesebleIfHexCollection" destination="0cM-5F-FgL" id="TsD-dj-GIh"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="GWd-nk-suy" id="OuD-a1-rco"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="GWd-nk-suy" id="Gh6-u1-nvE"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="TBT-7A-bSc" id="xNd-fh-gkL"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="GWd-nk-suy" id="qgC-sM-Onm"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="TBT-7A-bSc" id="xUV-kS-Jrx"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="yWa-Ak-Z1E" id="Gl4-jr-9je"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pV7-1K-hZ9" id="ql7-Ut-XEr"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="gHg-jK-DeF" id="04F-PH-ONR"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="Z5K-Og-w08" id="E2Y-UK-AMn"/>
+                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="pV7-1K-hZ9" id="abe-ZU-rE9"/>
+                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="yWa-Ak-Z1E" id="neS-7K-Eg0"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="0cM-5F-FgL" id="a8w-0t-rUh"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="pV7-1K-hZ9" id="Nlk-eR-mau"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pV7-1K-hZ9" id="YoR-3D-ETk"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="pg9-1v-RZ7" id="YpQ-8C-TwU"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="R4G-vV-w9Z" id="LVA-kG-sDh"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="D4i-2V-oRf" id="BoI-7N-NNP"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pg9-1v-RZ7" id="dw5-t6-5UN"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="0cM-5F-FgL" id="Cec-O4-OPG"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="yWa-Ak-Z1E" id="UhY-Ow-QLA"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="lEf-tC-3Zf" id="kI1-fR-xEt"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="P9B-uv-bbT" id="VON-Oy-kLU"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="9KW-fm-zBW" id="BIo-uc-kwy"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="61e-Sm-aKj" id="1e2-Rl-y9Q"/>
+                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="it7-PL-C0o" id="DrW-YK-CLB"/>
+                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="it7-PL-C0o" id="wMX-A2-iWc"/>
+                        <outletCollection property="allButtonsOutletCollection" destination="it7-PL-C0o" id="Swn-EE-dYy"/>
+                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="it7-PL-C0o" id="1r7-RY-FaY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -697,7 +694,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aTM-bV-bdZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KsJ-Xc-tce">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <navigationItem key="navigationItem" title="About us" id="orP-D7-K8T"/>
