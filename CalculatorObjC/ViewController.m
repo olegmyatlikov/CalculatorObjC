@@ -22,10 +22,11 @@
 @property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
 @property (retain, nonatomic) IBOutlet UIStackView *numeralSystemStackView;
 
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *allButtonsOutletCollection;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonWhichDesebleIfHexCollection;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsWhichDesebleIfOctCollection;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *buttonsWichDisableIfBinCollection;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
+// buttons witch should be disabled if user chose one of numeral systems (hex, oct or bin)
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hexDisableButtons;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *octDisableButtons;
+@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *binDisableButtons;
 
 @end
 
@@ -49,7 +50,7 @@ static NSString * const CalculatorDotSymbol = @".";
     self.numeralSystemLabel.text = CalculatorDecNumeralSystem;
     self.forHexLettersButtonsStackView.hidden = YES;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeDisplayResult) name:@"resultDidChange" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeDisplayResult) name:ResultDidChange object:nil];
 }
 
 
@@ -82,7 +83,7 @@ static NSString * const CalculatorDotSymbol = @".";
 }
 
 - (void)enableAllButtons {
-    for (UIButton *button in self.allButtonsOutletCollection) {
+    for (UIButton *button in self.allButtons) {
         button.enabled = YES;
         button.alpha = 1;
     }
@@ -142,11 +143,11 @@ static NSString * const CalculatorDotSymbol = @".";
 - (IBAction)numeralSystemButtonPressed:(UIButton *)sender {
     
     if ([sender.currentTitle  isEqual: CalculatorBinNumeralSystem]) {
-        [self disableButtonsForNumeralSystem:self.buttonsWichDisableIfBinCollection];
+        [self disableButtonsForNumeralSystem:self.binDisableButtons];
     } else if ([sender.currentTitle  isEqual: CalculatorOctNumeralSystem]) {
-        [self disableButtonsForNumeralSystem:self.buttonsWhichDesebleIfOctCollection];
+        [self disableButtonsForNumeralSystem:self.octDisableButtons];
     } else if ([sender.currentTitle  isEqual: CalculatorHexNumeralSystem]) {
-        [self disableButtonsForNumeralSystem:self.buttonWhichDesebleIfHexCollection];
+        [self disableButtonsForNumeralSystem:self.hexDisableButtons];
         self.forHexLettersButtonsStackView.hidden = NO;
     } else {
         [self enableAllButtons];
@@ -172,12 +173,13 @@ static NSString * const CalculatorDotSymbol = @".";
     [_displayLabel release];
     [_allButtonsStackView release];
     [_numeralSystemStackView release];
-    [_buttonsWichDisableIfBinCollection release];
-    [_allButtonsOutletCollection release];
-    [_buttonsWhichDesebleIfOctCollection release];
-    [_buttonWhichDesebleIfHexCollection release];
+    [_binDisableButtons release];
+    [_allButtons release];
+    [_octDisableButtons release];
+    [_hexDisableButtons release];
     [_forHexLettersButtonsStackView release];
     [_numeralSystemLabel release];
+    [_numeralSystem release];
     [super dealloc];
 }
 
