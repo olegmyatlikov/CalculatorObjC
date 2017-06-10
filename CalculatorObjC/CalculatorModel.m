@@ -156,7 +156,7 @@ NSString * const ResultDidChange = @"resultDidChange";
 }
 
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem {
-    //[_numeralSystem release];
+    [_numeralSystem release];
     self.numeralSystem = [NumeralSystemFactory systemFromSystemName:nameNumeralSystem];
 }
 

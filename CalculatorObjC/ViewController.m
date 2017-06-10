@@ -94,6 +94,16 @@ static NSString * const CalculatorDotSymbol = @".";
     self.displayLabel.text = self.calculatorModel.displayResult;
 }
 
+- (void)animatedHiddenOrShowStackView:(UIStackView *)stackView hide:(BOOL)hide {
+    [UIView transitionWithView:stackView
+                      duration:0.2
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                       stackView.hidden = hide;
+                    }
+                    completion:NULL];
+}
+
 
 #pragma mark - change rotation
 
@@ -148,7 +158,7 @@ static NSString * const CalculatorDotSymbol = @".";
         [self disableButtonsForNumeralSystem:self.octDisableButtons];
     } else if ([sender.currentTitle  isEqual: CalculatorHexNumeralSystem]) {
         [self disableButtonsForNumeralSystem:self.hexDisableButtons];
-        self.forHexLettersButtonsStackView.hidden = NO;
+        [self animatedHiddenOrShowStackView:self.forHexLettersButtonsStackView hide:NO];
     } else {
         [self enableAllButtons];
     }
