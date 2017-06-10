@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CalculatorModel.h"
+#import "NumeralSystemFactory.h"
 
 @interface OctNumeralSystem : NSObject <NumeralSystemProtocol>
 

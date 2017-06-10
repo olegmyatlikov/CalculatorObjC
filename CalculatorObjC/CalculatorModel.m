@@ -7,10 +7,7 @@
 //
 
 #import "CalculatorModel.h"
-#import "HexNumeralSystem.h"
-#import "DecNumeralSystem.h"
-#import "OctNumeralSystem.h"
-#import "BinNumeralSystem.h"
+#import "NumeralSystemFactory.h"
 
 @interface CalculatorModel()
 
@@ -28,10 +25,6 @@
 @property (copy, nonatomic) double (^reservedOperation)(double, double);
 
 @property (retain, nonatomic) id <NumeralSystemProtocol> numeralSystem;
-@property (retain, nonatomic) DecNumeralSystem *decNumeralSystem;
-@property (retain, nonatomic) BinNumeralSystem *binNumeralSystem;
-@property (retain, nonatomic) OctNumeralSystem *octNumeralSystem;
-@property (retain, nonatomic) HexNumeralSystem *hexNumeralSystem;
 
 @end
 
@@ -66,6 +59,9 @@ NSString * const CalculatorOctNumeralSystem = @"oct";
 NSString * const CalculatorBinNumeralSystem = @"bin";
 NSString * const CalculatorDecNumeralSystem = @"dec";
 
+NSString * const ResultDidChange = @"resultDidChange";
+
+
 #pragma mark - custom init
 
 - (id)init {
@@ -74,7 +70,7 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
-        _numeralSystem = [self.decNumeralSystem retain];
+        _numeralSystem = [NumeralSystemFactory systemFromSystemName:CalculatorDecNumeralSystem];
         _strOperand = @"0";
         
         _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
@@ -138,8 +134,9 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
 
 - (void)setDisplayResult:(NSString *)displayResult {
     _displayResult = displayResult;
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"resultDidChange" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:ResultDidChange object:nil];
 }
+
 
 #pragma mark - methods
 
@@ -159,17 +156,9 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
 }
 
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem {
-    if ([nameNumeralSystem isEqual:CalculatorBinNumeralSystem]) {
-        self.numeralSystem = self.binNumeralSystem;
-    } else if ([nameNumeralSystem isEqual:CalculatorOctNumeralSystem]) {
-        self.numeralSystem = self.octNumeralSystem;
-    } else if ([nameNumeralSystem isEqual:CalculatorHexNumeralSystem]) {
-        self.numeralSystem = self.hexNumeralSystem;
-    } else {
-        self.numeralSystem = self.decNumeralSystem;
-    }
+    //[_numeralSystem release];
+    self.numeralSystem = [NumeralSystemFactory systemFromSystemName:nameNumeralSystem];
 }
-
 
 - (void)performOperation:(NSString *)operation {
     
@@ -208,37 +197,6 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
 }
 
 
-#pragma mark - lazy getters for numeral systems
-
-- (DecNumeralSystem *)decNumeralSystem {
-    if (!_decNumeralSystem) {
-        _decNumeralSystem = [[DecNumeralSystem alloc] init];
-    }
-    return _decNumeralSystem;
-}
-
-- (BinNumeralSystem *)binNumeralSystem {
-    if (!_binNumeralSystem) {
-        _binNumeralSystem = [[BinNumeralSystem alloc] init];
-    }
-    return _binNumeralSystem;
-}
-
-- (OctNumeralSystem *)octNumeralSystem {
-    if (!_octNumeralSystem) {
-        _octNumeralSystem = [[OctNumeralSystem alloc] init];
-    }
-    return _octNumeralSystem;
-}
-
-- (HexNumeralSystem *)hexNumeralSystem {
-    if (!_hexNumeralSystem) {
-        _hexNumeralSystem = [[HexNumeralSystem alloc] init];
-    }
-    return _hexNumeralSystem;
-}
-
-
 #pragma mark - dealloc
 
 - (void)dealloc {
@@ -249,10 +207,6 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
     [_reservedOperation release];
     [_strOperand release];
     [_numeralSystem release];
-    [_decNumeralSystem release];
-    [_binNumeralSystem release];
-    [_octNumeralSystem release];
-    [_hexNumeralSystem release];
     [super dealloc];
 }
 

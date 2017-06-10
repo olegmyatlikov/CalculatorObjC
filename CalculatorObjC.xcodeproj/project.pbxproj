@@ -11,6 +11,7 @@
 		84066BFE1EDE8810004A64E3 /* OctNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFD1EDE8810004A64E3 /* OctNumeralSystem.m */; };
 		84066C011EDE8830004A64E3 /* BinNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C001EDE8830004A64E3 /* BinNumeralSystem.m */; };
 		84066C041EDE8840004A64E3 /* DecNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C031EDE8840004A64E3 /* DecNumeralSystem.m */; };
+		8435E0841EEBE0F9001BD706 /* NumeralSystemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8435E0831EEBE0F9001BD706 /* NumeralSystemFactory.m */; };
 		846021C61EC8524700C11C01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021C51EC8524700C11C01 /* main.m */; };
 		846021C91EC8524700C11C01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021C81EC8524700C11C01 /* AppDelegate.m */; };
 		846021CC1EC8524700C11C01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846021CB1EC8524700C11C01 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		84066C001EDE8830004A64E3 /* BinNumeralSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinNumeralSystem.m; sourceTree = "<group>"; };
 		84066C021EDE8840004A64E3 /* DecNumeralSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecNumeralSystem.h; sourceTree = "<group>"; };
 		84066C031EDE8840004A64E3 /* DecNumeralSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecNumeralSystem.m; sourceTree = "<group>"; };
+		8435E0821EEBE0F9001BD706 /* NumeralSystemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumeralSystemFactory.h; sourceTree = "<group>"; };
+		8435E0831EEBE0F9001BD706 /* NumeralSystemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumeralSystemFactory.m; sourceTree = "<group>"; };
 		846021C11EC8524700C11C01 /* CalculatorObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846021C51EC8524700C11C01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846021C71EC8524700C11C01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 		36068B081EE6B2B70088EC2D /* Numeral Systems */ = {
 			isa = PBXGroup;
 			children = (
+				8435E0821EEBE0F9001BD706 /* NumeralSystemFactory.h */,
+				8435E0831EEBE0F9001BD706 /* NumeralSystemFactory.m */,
 				84066BF91EDE8788004A64E3 /* HexNumeralSystem.h */,
 				84066BFA1EDE8788004A64E3 /* HexNumeralSystem.m */,
 				84066BFC1EDE8810004A64E3 /* OctNumeralSystem.h */,
@@ -231,6 +236,7 @@
 				84066BFE1EDE8810004A64E3 /* OctNumeralSystem.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
 				84066BFB1EDE8788004A64E3 /* HexNumeralSystem.m in Sources */,
+				8435E0841EEBE0F9001BD706 /* NumeralSystemFactory.m in Sources */,
 				84066C011EDE8830004A64E3 /* BinNumeralSystem.m in Sources */,
 				846021C61EC8524700C11C01 /* main.m in Sources */,
 				84066C041EDE8840004A64E3 /* DecNumeralSystem.m in Sources */,

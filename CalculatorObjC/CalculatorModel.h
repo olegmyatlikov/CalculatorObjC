@@ -12,7 +12,7 @@ extern NSString * const CalculatorHexNumeralSystem;
 extern NSString * const CalculatorOctNumeralSystem;
 extern NSString * const CalculatorBinNumeralSystem;
 extern NSString * const CalculatorDecNumeralSystem;
-
+extern NSString * const ResultDidChange;
 
 @protocol NumeralSystemProtocol;
 
@@ -27,10 +27,3 @@ extern NSString * const CalculatorDecNumeralSystem;
 
 @end
 
-
-@protocol NumeralSystemProtocol <NSObject>
-
-- (double)convertOperandToDecimal:(NSString*)operand;
-- (NSString*)converResult:(NSString*)dispalyResult;
-
-@end

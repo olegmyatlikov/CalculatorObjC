@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYR-yw-XKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYR-yw-XKv">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-bW-dH5">
-                                <rect key="frame" x="16" y="84" width="286.5" height="79"/>
+                                <rect key="frame" x="16" y="84" width="287" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Cqd-d5-XK8"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57H-Z3-XsK">
-                                <rect key="frame" x="57.5" y="538" width="205" height="20"/>
+                                <rect key="frame" x="58" y="538" width="205" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="u7v-2H-Nqq"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="39"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMH-hn-ivn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="39"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="39"/>
                                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                                         <state key="normal" title="hex">
@@ -68,7 +68,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-3d-chr">
-                                                        <rect key="frame" x="74.5" y="0.0" width="64.5" height="39"/>
+                                                        <rect key="frame" x="75" y="0.0" width="64" height="39"/>
                                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                                         <state key="normal" title="dec">
@@ -82,7 +82,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bZ-XG-QEW">
-                                                        <rect key="frame" x="149" y="0.0" width="64.5" height="39"/>
+                                                        <rect key="frame" x="149" y="0.0" width="65" height="39"/>
                                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                                         <state key="normal" title="oct">
@@ -96,7 +96,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-hr-W1Q">
-                                                        <rect key="frame" x="223.5" y="0.0" width="64.5" height="39"/>
+                                                        <rect key="frame" x="224" y="0.0" width="64" height="39"/>
                                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
                                                         <state key="normal" title="bin">
@@ -115,7 +115,7 @@
                                                 <rect key="frame" x="0.0" y="49" width="288" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-KC-hPZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="A">
@@ -129,7 +129,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-2O-mv8">
-                                                        <rect key="frame" x="49.5" y="0.0" width="40" height="36"/>
+                                                        <rect key="frame" x="50" y="0.0" width="39" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="B">
@@ -143,7 +143,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-iL-hoT">
-                                                        <rect key="frame" x="99.5" y="0.0" width="39.5" height="36"/>
+                                                        <rect key="frame" x="99" y="0.0" width="40" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="C">
@@ -157,7 +157,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ9-T9-xb0">
-                                                        <rect key="frame" x="149" y="0.0" width="39.5" height="36"/>
+                                                        <rect key="frame" x="149" y="0.0" width="40" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="D">
@@ -171,7 +171,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVX-2F-zcT">
-                                                        <rect key="frame" x="198.5" y="0.0" width="40" height="36"/>
+                                                        <rect key="frame" x="199" y="0.0" width="39" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="E">
@@ -185,7 +185,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-Bv-mxS">
-                                                        <rect key="frame" x="248.5" y="0.0" width="39.5" height="36"/>
+                                                        <rect key="frame" x="248" y="0.0" width="40" height="36"/>
                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                                         <state key="normal" title="F">
@@ -207,7 +207,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61e-Sm-aKj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
                                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="AC">
@@ -221,7 +221,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it7-PL-C0o">
-                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="44"/>
+                                                                <rect key="frame" x="60" y="0.0" width="49" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="﹪">
@@ -249,7 +249,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-tC-3Zf">
-                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="44"/>
+                                                                <rect key="frame" x="179" y="0.0" width="49" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="×">
@@ -263,7 +263,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9B-uv-bbT">
-                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="44"/>
+                                                                <rect key="frame" x="238" y="0.0" width="50" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="-">
@@ -282,10 +282,10 @@
                                                         <rect key="frame" x="0.0" y="54" width="288" height="98"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qHw-wc-rVY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrD-W9-lQv">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
                                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="√">
@@ -299,7 +299,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTQ-eV-qlt">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="50" height="44"/>
                                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="π">
@@ -315,10 +315,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-kr-1h4">
-                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="60" y="0.0" width="49" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfK-6D-3tY">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="7">
@@ -332,7 +332,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="une-8w-Hfr">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="4">
@@ -381,10 +381,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-3Q-WME">
-                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="179" y="0.0" width="49" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWd-nk-suy">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="9">
@@ -398,7 +398,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-7A-bSc">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="6">
@@ -414,7 +414,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2i-oM-Crd">
-                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="238" y="0.0" width="50" height="98"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="+">
@@ -433,10 +433,10 @@
                                                         <rect key="frame" x="0.0" y="162" width="288" height="98"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-mr-amt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-1K-hZ9">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
                                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="sin">
@@ -450,7 +450,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWa-Ak-Z1E">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="50" height="44"/>
                                                                         <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="cos">
@@ -466,10 +466,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z8E-c1-8xd">
-                                                                <rect key="frame" x="59.5" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="60" y="0.0" width="49" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-vV-w9Z">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="1">
@@ -483,7 +483,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg9-1v-RZ7">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="±">
@@ -532,10 +532,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-aC-gan">
-                                                                <rect key="frame" x="179" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="179" y="0.0" width="49" height="98"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-jK-DeF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title="3">
@@ -549,7 +549,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cM-5F-FgL">
-                                                                        <rect key="frame" x="0.0" y="54" width="49.5" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="54" width="49" height="44"/>
                                                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                         <state key="normal" title=".">
@@ -565,7 +565,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5K-Og-w08">
-                                                                <rect key="frame" x="238.5" y="0.0" width="49.5" height="98"/>
+                                                                <rect key="frame" x="238" y="0.0" width="50" height="98"/>
                                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
                                                                 <state key="normal" title="=">
@@ -625,60 +625,60 @@
                         <outlet property="forHexLettersButtonsStackView" destination="1OA-a0-vhP" id="pwT-JL-nMV"/>
                         <outlet property="numeralSystemLabel" destination="oDh-op-fFP" id="7uZ-Wk-6CG"/>
                         <outlet property="numeralSystemStackView" destination="KG6-Yy-zB1" id="rZe-x1-5rb"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="XfK-6D-3tY" id="Sls-XJ-7xZ"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="une-8w-Hfr" id="vR9-3J-1JI"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="PrD-W9-lQv" id="Ffk-Vy-NYT"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="GWd-nk-suy" id="Gh6-u1-nvE"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="PrD-W9-lQv" id="pc6-GE-7U0"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="GWd-nk-suy" id="qgC-sM-Onm"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="GWd-nk-suy" id="OuD-a1-rco"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="wTQ-eV-qlt" id="hob-cP-don"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="PrD-W9-lQv" id="G0K-ev-sdo"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="wTQ-eV-qlt" id="yNC-Yk-8SV"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="XfK-6D-3tY" id="ukW-JP-7fX"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="PrD-W9-lQv" id="3Wj-9c-oOf"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="wTQ-eV-qlt" id="R4j-fU-TZW"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="TBT-7A-bSc" id="xNd-fh-gkL"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="TBT-7A-bSc" id="xUV-kS-Jrx"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="gyi-Xs-qnP" id="vy3-5g-0Kk"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gyi-Xs-qnP" id="Qa7-cm-hg5"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="une-8w-Hfr" id="fjx-J9-EAU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="J2i-oM-Crd" id="rPD-J6-0Ud"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="wTQ-eV-qlt" id="0u7-xR-Sdn"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="33g-r6-PH7" id="I5t-f3-mZN"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="gyi-Xs-qnP" id="IoI-fB-ewd"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="33g-r6-PH7" id="XTy-cU-Xbp"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="gHg-jK-DeF" id="8mi-RO-ggu"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="x9P-Pb-njP" id="4OG-65-Zji"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="yWa-Ak-Z1E" id="ki9-eC-Dc6"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pg9-1v-RZ7" id="1Nu-PK-SFX"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="D4i-2V-oRf" id="dO6-UN-R8o"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="pg9-1v-RZ7" id="20X-eL-C7x"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="0cM-5F-FgL" id="BlN-4b-QN4"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="0cM-5F-FgL" id="TsD-dj-GIh"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="yWa-Ak-Z1E" id="Gl4-jr-9je"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pV7-1K-hZ9" id="ql7-Ut-XEr"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="gHg-jK-DeF" id="04F-PH-ONR"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="Z5K-Og-w08" id="E2Y-UK-AMn"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="pV7-1K-hZ9" id="abe-ZU-rE9"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="yWa-Ak-Z1E" id="neS-7K-Eg0"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="0cM-5F-FgL" id="a8w-0t-rUh"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="pV7-1K-hZ9" id="Nlk-eR-mau"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="pV7-1K-hZ9" id="YoR-3D-ETk"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="pg9-1v-RZ7" id="YpQ-8C-TwU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="R4G-vV-w9Z" id="LVA-kG-sDh"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="D4i-2V-oRf" id="BoI-7N-NNP"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="pg9-1v-RZ7" id="dw5-t6-5UN"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="0cM-5F-FgL" id="Cec-O4-OPG"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="yWa-Ak-Z1E" id="UhY-Ow-QLA"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="lEf-tC-3Zf" id="kI1-fR-xEt"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="P9B-uv-bbT" id="VON-Oy-kLU"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="9KW-fm-zBW" id="BIo-uc-kwy"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="61e-Sm-aKj" id="1e2-Rl-y9Q"/>
-                        <outletCollection property="buttonWhichDesebleIfHexCollection" destination="it7-PL-C0o" id="DrW-YK-CLB"/>
-                        <outletCollection property="buttonsWhichDesebleIfOctCollection" destination="it7-PL-C0o" id="wMX-A2-iWc"/>
-                        <outletCollection property="allButtonsOutletCollection" destination="it7-PL-C0o" id="Swn-EE-dYy"/>
-                        <outletCollection property="buttonsWichDisableIfBinCollection" destination="it7-PL-C0o" id="1r7-RY-FaY"/>
+                        <outletCollection property="allButtons" destination="61e-Sm-aKj" id="WGl-vZ-Ami"/>
+                        <outletCollection property="allButtons" destination="it7-PL-C0o" id="Bgd-87-lrz"/>
+                        <outletCollection property="hexDisableButtons" destination="it7-PL-C0o" id="eax-Ka-4yz"/>
+                        <outletCollection property="octDisableButtons" destination="it7-PL-C0o" id="SrD-Wc-fTn"/>
+                        <outletCollection property="binDisableButtons" destination="it7-PL-C0o" id="jjq-JY-gwh"/>
+                        <outletCollection property="allButtons" destination="9KW-fm-zBW" id="MNS-FZ-Uva"/>
+                        <outletCollection property="allButtons" destination="lEf-tC-3Zf" id="xyw-IX-pWj"/>
+                        <outletCollection property="allButtons" destination="P9B-uv-bbT" id="MUI-mu-s6K"/>
+                        <outletCollection property="allButtons" destination="J2i-oM-Crd" id="hGq-MS-rbC"/>
+                        <outletCollection property="allButtons" destination="Z5K-Og-w08" id="RR9-at-n5k"/>
+                        <outletCollection property="allButtons" destination="PrD-W9-lQv" id="5I7-bM-ELA"/>
+                        <outletCollection property="hexDisableButtons" destination="PrD-W9-lQv" id="y22-9M-dwF"/>
+                        <outletCollection property="octDisableButtons" destination="PrD-W9-lQv" id="R8K-JD-eqp"/>
+                        <outletCollection property="binDisableButtons" destination="PrD-W9-lQv" id="VeO-lz-Nwl"/>
+                        <outletCollection property="allButtons" destination="wTQ-eV-qlt" id="W9u-Z0-OQx"/>
+                        <outletCollection property="hexDisableButtons" destination="wTQ-eV-qlt" id="XeT-Il-an3"/>
+                        <outletCollection property="octDisableButtons" destination="wTQ-eV-qlt" id="nKa-Yj-LlU"/>
+                        <outletCollection property="binDisableButtons" destination="wTQ-eV-qlt" id="1UA-ur-lvR"/>
+                        <outletCollection property="allButtons" destination="pV7-1K-hZ9" id="hQ8-fr-Ob7"/>
+                        <outletCollection property="hexDisableButtons" destination="pV7-1K-hZ9" id="igE-LN-NjG"/>
+                        <outletCollection property="octDisableButtons" destination="pV7-1K-hZ9" id="dek-Jm-XMc"/>
+                        <outletCollection property="binDisableButtons" destination="pV7-1K-hZ9" id="SVR-4w-fg7"/>
+                        <outletCollection property="allButtons" destination="yWa-Ak-Z1E" id="ssD-yz-QXM"/>
+                        <outletCollection property="hexDisableButtons" destination="yWa-Ak-Z1E" id="dqk-Mq-hjW"/>
+                        <outletCollection property="octDisableButtons" destination="yWa-Ak-Z1E" id="N7J-cv-NAy"/>
+                        <outletCollection property="binDisableButtons" destination="yWa-Ak-Z1E" id="Twe-Vc-xcc"/>
+                        <outletCollection property="allButtons" destination="0cM-5F-FgL" id="Kci-ez-Hgc"/>
+                        <outletCollection property="hexDisableButtons" destination="0cM-5F-FgL" id="ybu-Ci-oj6"/>
+                        <outletCollection property="octDisableButtons" destination="0cM-5F-FgL" id="Rbi-pv-YUF"/>
+                        <outletCollection property="binDisableButtons" destination="0cM-5F-FgL" id="Aww-JP-bYg"/>
+                        <outletCollection property="allButtons" destination="pg9-1v-RZ7" id="WIZ-tS-a8v"/>
+                        <outletCollection property="hexDisableButtons" destination="pg9-1v-RZ7" id="sHu-hL-uYx"/>
+                        <outletCollection property="octDisableButtons" destination="pg9-1v-RZ7" id="Ope-QK-YAy"/>
+                        <outletCollection property="binDisableButtons" destination="pg9-1v-RZ7" id="Gpj-HM-L6d"/>
+                        <outletCollection property="allButtons" destination="GWd-nk-suy" id="viz-Ws-k1P"/>
+                        <outletCollection property="octDisableButtons" destination="GWd-nk-suy" id="dpL-e5-ms6"/>
+                        <outletCollection property="binDisableButtons" destination="GWd-nk-suy" id="nf6-Wk-j9x"/>
+                        <outletCollection property="allButtons" destination="gyi-Xs-qnP" id="5Re-ac-kWc"/>
+                        <outletCollection property="octDisableButtons" destination="gyi-Xs-qnP" id="7br-bj-pgf"/>
+                        <outletCollection property="binDisableButtons" destination="gyi-Xs-qnP" id="zfZ-bJ-jDq"/>
+                        <outletCollection property="allButtons" destination="XfK-6D-3tY" id="4Qd-tt-2gi"/>
+                        <outletCollection property="binDisableButtons" destination="XfK-6D-3tY" id="ACf-fW-KoQ"/>
+                        <outletCollection property="allButtons" destination="TBT-7A-bSc" id="1cs-hD-gyE"/>
+                        <outletCollection property="binDisableButtons" destination="TBT-7A-bSc" id="PDb-hM-6Zc"/>
+                        <outletCollection property="allButtons" destination="33g-r6-PH7" id="eZn-oN-zZV"/>
+                        <outletCollection property="binDisableButtons" destination="33g-r6-PH7" id="PHR-cN-Dyc"/>
+                        <outletCollection property="allButtons" destination="une-8w-Hfr" id="P89-Qv-QUy"/>
+                        <outletCollection property="binDisableButtons" destination="une-8w-Hfr" id="VmU-Og-5Gy"/>
+                        <outletCollection property="allButtons" destination="gHg-jK-DeF" id="9AI-Gv-Sh0"/>
+                        <outletCollection property="binDisableButtons" destination="gHg-jK-DeF" id="mKE-d1-yJP"/>
+                        <outletCollection property="allButtons" destination="D4i-2V-oRf" id="qgW-XZ-u6Z"/>
+                        <outletCollection property="binDisableButtons" destination="D4i-2V-oRf" id="9aB-tH-oKt"/>
+                        <outletCollection property="allButtons" destination="R4G-vV-w9Z" id="Kwz-LW-fdk"/>
+                        <outletCollection property="allButtons" destination="x9P-Pb-njP" id="Xew-wv-Yra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
