@@ -19,13 +19,13 @@
 + (id<NumeralSystemProtocol>)systemFromSystemName:(NSString *)systemName {
     
     if ([systemName isEqual:CalculatorBinNumeralSystem]) {
-        return [[BinNumeralSystem alloc] init];
+        return [[[BinNumeralSystem alloc] init] autorelease];
     } else if ([systemName isEqual:CalculatorOctNumeralSystem]) {
-        return [[OctNumeralSystem alloc] init];
+        return [[[OctNumeralSystem alloc] init] autorelease];
     } else if ([systemName isEqual:CalculatorHexNumeralSystem]) {
-        return [[HexNumeralSystem alloc] init];
+        return [[[HexNumeralSystem alloc] init] autorelease];
     } else {
-        return [[DecNumeralSystem alloc] init];
+        return [[[DecNumeralSystem alloc] init] autorelease];
     }
     
 }
