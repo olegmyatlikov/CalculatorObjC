@@ -70,7 +70,7 @@ NSString * const ResultDidChange = @"resultDidChange";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
-        _numeralSystem = [NumeralSystemFactory systemFromSystemName:CalculatorDecNumeralSystem];
+        _numeralSystem = [[NumeralSystemFactory systemFromSystemName:CalculatorDecNumeralSystem] retain];
         _strOperand = @"0";
         
         _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
@@ -157,7 +157,7 @@ NSString * const ResultDidChange = @"resultDidChange";
 
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem {
     [_numeralSystem release];
-    self.numeralSystem = [NumeralSystemFactory systemFromSystemName:nameNumeralSystem];
+    self.numeralSystem = [[NumeralSystemFactory systemFromSystemName:nameNumeralSystem] retain];
 }
 
 - (void)performOperation:(NSString *)operation {
