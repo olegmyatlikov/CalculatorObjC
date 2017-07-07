@@ -50,6 +50,7 @@ static NSString * const CalculatorDotSymbol = @".";
     self.forHexLettersButtonsStackView.hidden = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeDisplayResult) name:ResultDidChange object:nil];
+    
 }
 
 

@@ -62,6 +62,27 @@ NSString * const CalculatorDecNumeralSystem = @"dec";
 NSString * const ResultDidChange = @"resultDidChange";
 
 
+#pragma mark - add operation
+
+- (void)addBunaryOperation:(NSString *)operationName operation:(double (^)(double, double))operation {
+    NSMutableDictionary *binaryOperation = [self.binaryOperations mutableCopy];
+    [binaryOperation setValue:operation forKey:operationName];
+    self.unaryOperations = binaryOperation;
+
+}
+
+- (void)addUnaryOperation:(NSString *)operationName operation:(double (^)(double))operation {
+    NSMutableDictionary *unaryOperation = [self.unaryOperations mutableCopy];
+    [unaryOperation setValue:operation forKey:operationName];
+    self.unaryOperations = unaryOperation;
+}
+
+- (void)addConstants:(NSString *)operationName constantValue:(double)constantValue {
+    NSMutableDictionary *constants = [self.constants mutableCopy];
+    [constants setValue:@(constantValue) forKey:operationName];
+    self.constants = constants;
+}
+
 #pragma mark - custom init
 
 - (id)init {
