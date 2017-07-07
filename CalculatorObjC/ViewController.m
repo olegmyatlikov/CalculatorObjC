@@ -12,21 +12,21 @@
 
 @interface ViewController ()
 
-@property (retain, nonatomic) IBOutlet UILabel *displayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 @property (assign, nonatomic) BOOL userMiddleOfTyping;
-@property (retain, nonatomic) CalculatorModel *calculatorModel;
-@property (retain, nonatomic) NSString *numeralSystem;
-@property (retain, nonatomic) IBOutlet UILabel *numeralSystemLabel;
+@property (strong, nonatomic) CalculatorModel *calculatorModel;
+@property (strong, nonatomic) NSString *numeralSystem;
+@property (weak, nonatomic) IBOutlet UILabel *numeralSystemLabel;
 
-@property (retain, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
-@property (retain, nonatomic) IBOutlet UIStackView *allButtonsStackView;
-@property (retain, nonatomic) IBOutlet UIStackView *numeralSystemStackView;
+@property (weak, nonatomic) IBOutlet UIStackView *forHexLettersButtonsStackView;
+@property (weak, nonatomic) IBOutlet UIStackView *allButtonsStackView;
+@property (weak, nonatomic) IBOutlet UIStackView *numeralSystemStackView;
 
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
+@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
 // buttons witch should be disabled if user chose one of numeral systems (hex, oct or bin)
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *hexDisableButtons;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *octDisableButtons;
-@property (retain, nonatomic) IBOutletCollection(UIButton) NSArray *binDisableButtons;
+@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *hexDisableButtons;
+@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *octDisableButtons;
+@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *binDisableButtons;
 
 @end
 
@@ -46,7 +46,6 @@ static NSString * const CalculatorDotSymbol = @".";
     UISwipeGestureRecognizer *swipeOnDispalyRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeRecognizer:)] ;
     swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
-    [swipeOnDispalyRecognizer release];
     self.numeralSystemLabel.text = CalculatorDecNumeralSystem;
     self.forHexLettersButtonsStackView.hidden = YES;
     
@@ -70,7 +69,6 @@ static NSString * const CalculatorDotSymbol = @".";
     copyrightViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     copyrightViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     [self presentViewController:copyrightViewController animated:YES completion:nil];
-    [copyrightViewController release];
 }
 
 
@@ -177,20 +175,5 @@ static NSString * const CalculatorDotSymbol = @".";
     return _calculatorModel;
 }
 
-
-- (void)dealloc {
-    [_calculatorModel release];
-    [_displayLabel release];
-    [_allButtonsStackView release];
-    [_numeralSystemStackView release];
-    [_binDisableButtons release];
-    [_allButtons release];
-    [_octDisableButtons release];
-    [_hexDisableButtons release];
-    [_forHexLettersButtonsStackView release];
-    [_numeralSystemLabel release];
-    [_numeralSystem release];
-    [super dealloc];
-}
 
 @end

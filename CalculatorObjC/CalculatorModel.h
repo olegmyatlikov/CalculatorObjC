@@ -19,8 +19,8 @@ extern NSString * const ResultDidChange;
 
 @interface CalculatorModel : NSObject
 
-@property (retain, nonatomic) NSString *strOperand; // add becouse HEX have a litteral "ABCDEF"
-@property (retain, nonatomic, readonly) NSString *displayResult;
+@property (strong, nonatomic) NSString *strOperand; // add becouse HEX have a litteral "ABCDEF"
+@property (strong, nonatomic, readonly) NSString *displayResult;
 
 - (void)performOperation:(NSString *)operation;
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem;
