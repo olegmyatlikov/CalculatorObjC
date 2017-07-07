@@ -25,7 +25,7 @@ extern NSString * const ResultDidChange;
 - (void)performOperation:(NSString *)operation;
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem;
 
-- (void)addBunaryOperation:(NSString *)operationName operation:(double (^)(double, double))operation;
+- (void)addBinaryOperation:(NSString *)operationName operation:(double (^)(double, double))operation;
 - (void)addUnaryOperation:(NSString *)operationName operation:(double (^)(double))operation;
 - (void)addConstants:(NSString *)operationName constantValue:(double)constantValue;
 

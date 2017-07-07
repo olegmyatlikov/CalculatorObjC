@@ -64,11 +64,10 @@ NSString * const ResultDidChange = @"resultDidChange";
 
 #pragma mark - add operation
 
-- (void)addBunaryOperation:(NSString *)operationName operation:(double (^)(double, double))operation {
+- (void)addBinaryOperation:(NSString *)operationName operation:(double (^)(double, double))operation {
     NSMutableDictionary *binaryOperation = [self.binaryOperations mutableCopy];
     [binaryOperation setValue:operation forKey:operationName];
-    self.unaryOperations = binaryOperation;
-
+    self.binaryOperations = binaryOperation;
 }
 
 - (void)addUnaryOperation:(NSString *)operationName operation:(double (^)(double))operation {
@@ -82,6 +81,7 @@ NSString * const ResultDidChange = @"resultDidChange";
     [constants setValue:@(constantValue) forKey:operationName];
     self.constants = constants;
 }
+
 
 #pragma mark - custom init
 
