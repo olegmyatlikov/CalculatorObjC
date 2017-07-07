@@ -14,17 +14,17 @@
 @property (assign, nonatomic) double operand;
 @property (assign, nonatomic) double accumulator;
 @property (assign, nonatomic) double result;
-@property (retain, nonatomic, readwrite) NSString *displayResult;
+@property (strong, nonatomic, readwrite) NSString *displayResult;
 
 @property (assign, nonatomic) BOOL haveDeferredOperation;
 @property (assign, nonatomic) BOOL haveSecondOperand;
 
-@property (retain, nonatomic) NSDictionary *binaryOperations;
-@property (retain, nonatomic) NSDictionary *unaryOperations;
-@property (retain, nonatomic) NSDictionary *constants;
-@property (copy, nonatomic) double (^reservedOperation)(double, double);
+@property (strong, nonatomic) NSDictionary *binaryOperations;
+@property (strong, nonatomic) NSDictionary *unaryOperations;
+@property (strong, nonatomic) NSDictionary *constants;
+@property (strong, nonatomic) double (^reservedOperation)(double, double);
 
-@property (retain, nonatomic) id <NumeralSystemProtocol> numeralSystem;
+@property (strong, nonatomic) id <NumeralSystemProtocol> numeralSystem;
 
 @end
 
@@ -70,10 +70,10 @@ NSString * const ResultDidChange = @"resultDidChange";
         
         _haveDeferredOperation = NO;
         _displayResult = CalculatorZeroValue;
-        _numeralSystem = [[NumeralSystemFactory systemFromSystemName:CalculatorDecNumeralSystem] retain];
+        _numeralSystem = [NumeralSystemFactory systemFromSystemName:CalculatorDecNumeralSystem];
         _strOperand = @"0";
         
-        _binaryOperations = [@{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
+        _binaryOperations = @{CalculatorPlusOperation : ^ double (double firstValue, double secondValue) {
             return firstValue + secondValue;
         },
                             CalculatorMinusOperation : ^ double (double firstValue, double secondValue) {
@@ -87,10 +87,10 @@ NSString * const ResultDidChange = @"resultDidChange";
                                  },
                             CalculatorRemainderOperation : ^ double (double firstValue, double secondValue) {
                                       return fmod(firstValue, secondValue);
-                                  }} retain];
+                                  }};
         
     
-        _unaryOperations = [@{CalculatorSqrtOperation : ^ double (double value) {
+        _unaryOperations = @{CalculatorSqrtOperation : ^ double (double value) {
                                      return sqrt(value);
                                  },
                             CalculatorSignChangeOperation : ^ double (double value) {
@@ -101,9 +101,9 @@ NSString * const ResultDidChange = @"resultDidChange";
                                  },
                             CalculatorCosOperation : ^ double (double value) {
                                      return cos(value);
-                                 }} retain];
+                                 }};
         
-        _constants = [@{CalculatorMPISymbol : @M_PI} retain];
+        _constants = @{CalculatorMPISymbol : @M_PI};
     }
     
     return self;
@@ -156,8 +156,7 @@ NSString * const ResultDidChange = @"resultDidChange";
 }
 
 - (void)applyNumeralSystemByName:(NSString *)nameNumeralSystem {
-    [_numeralSystem release];
-    self.numeralSystem = [[NumeralSystemFactory systemFromSystemName:nameNumeralSystem] retain];
+    self.numeralSystem = [NumeralSystemFactory systemFromSystemName:nameNumeralSystem];
 }
 
 - (void)performOperation:(NSString *)operation {
@@ -194,20 +193,6 @@ NSString * const ResultDidChange = @"resultDidChange";
     self.displayResult = [self.numeralSystem converResult:[NSString stringWithFormat:@"%g", self.result]];
     [self checkErrors];
     
-}
-
-
-#pragma mark - dealloc
-
-- (void)dealloc {
-    [_displayResult release];
-    [_binaryOperations release];
-    [_unaryOperations release];
-    [_constants release];
-    [_reservedOperation release];
-    [_strOperand release];
-    [_numeralSystem release];
-    [super dealloc];
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "CopyrightViewController.h"
 
 @interface CopyrightViewController ()
-@property (retain, nonatomic) IBOutlet UIView *popUpCopyrightView;
+@property (weak, nonatomic) IBOutlet UIView *popUpCopyrightView;
 
 @end
 
@@ -25,8 +25,4 @@
 }
 
 
-- (void)dealloc {
-    [_popUpCopyrightView release];
-    [super dealloc];
-}
 @end
