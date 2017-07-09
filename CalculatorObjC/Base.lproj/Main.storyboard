@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYR-yw-XKv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XPc-iw-eHn">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -224,7 +226,7 @@
                                                                 <rect key="frame" x="59.5" y="0.0" width="49.5" height="44"/>
                                                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                                <state key="normal" title="&amp;">
+                                                                <state key="normal" title="﹪">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                                 <variation key="heightClass=compact-widthClass=compact">
@@ -685,6 +687,310 @@
             </objects>
             <point key="canvasLocation" x="770.39999999999998" y="34.632683658170919"/>
         </scene>
+        <!--Simple Calcilator View Controller-->
+        <scene sceneID="wgr-rq-gWC">
+            <objects>
+                <viewController id="J0Y-DV-hsx" customClass="SimpleCalcilatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DU7-zf-ubT"/>
+                        <viewControllerLayoutGuide type="bottom" id="jvc-3E-yS0"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="OpO-eK-0Ny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jko-um-Pxv" userLabel="display">
+                                <rect key="frame" x="16" y="20" width="288" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="dec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56m-OM-tqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="5mR-ar-sZr">
+                                        <rect key="frame" x="0.0" y="16" width="288" height="84"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jBe-i3-Zh2"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-Dz-NCZ" userLabel="buttons">
+                                <rect key="frame" x="0.0" y="130" width="321" height="438"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-94-aGP">
+                                        <rect key="frame" x="0.0" y="0.0" width="321" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-x8-MhI">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="gj5-uM-Vhi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-vR-kSq">
+                                                <rect key="frame" x="80.5" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="32"/>
+                                                <state key="normal" title="±">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="TAv-da-ziT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-Ah-Yc7">
+                                                <rect key="frame" x="161" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="28"/>
+                                                <state key="normal" title="﹪">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="u54-O6-Cjx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-sz-7Dz">
+                                                <rect key="frame" x="241.5" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="up7-TV-343"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LdT-x8-MhI" firstAttribute="baseline" secondItem="7dD-vR-kSq" secondAttribute="baseline" id="5hK-MF-Zvm"/>
+                                            <constraint firstItem="LdT-x8-MhI" firstAttribute="baseline" secondItem="7dD-vR-kSq" secondAttribute="firstBaseline" id="FQD-Cp-1ev"/>
+                                            <constraint firstItem="7dD-vR-kSq" firstAttribute="baseline" secondItem="LdT-x8-MhI" secondAttribute="firstBaseline" id="Meu-GV-UhC"/>
+                                            <constraint firstItem="7dD-vR-kSq" firstAttribute="baseline" secondItem="UaF-sz-7Dz" secondAttribute="baseline" id="YrY-Am-0Ep"/>
+                                            <constraint firstItem="7dD-vR-kSq" firstAttribute="baseline" secondItem="UaF-sz-7Dz" secondAttribute="firstBaseline" id="dNY-KA-zMM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="isM-Fn-xd4">
+                                        <rect key="frame" x="0.0" y="88" width="321" height="86.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-E4-U2k">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="6zN-t0-bS2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWY-98-p0G">
+                                                <rect key="frame" x="80.5" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="2YA-WN-fwW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEA-nt-SeW">
+                                                <rect key="frame" x="161" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="hK3-yZ-zkE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP1-Xv-ijv">
+                                                <rect key="frame" x="241.5" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <state key="normal" title="×">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="SZn-46-PXd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-B0-4Rc">
+                                        <rect key="frame" x="0.0" y="175.5" width="321" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opa-nW-PB7">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="qmG-4I-lad"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b37-0u-1LB">
+                                                <rect key="frame" x="80.5" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="v6v-oh-zZa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Vt-bE6">
+                                                <rect key="frame" x="161" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="VPN-PA-Lm2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm1-9U-4cV">
+                                                <rect key="frame" x="241.5" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="n8o-2z-qg9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fek-N4-tQa">
+                                        <rect key="frame" x="0.0" y="263.5" width="321" height="86.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q54-cE-bTs">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="X0n-VU-oOX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-RH-U3Z">
+                                                <rect key="frame" x="80.5" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="TDs-eK-qlD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ei-B4-XDF">
+                                                <rect key="frame" x="161" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="zkO-pI-k7a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ3-uh-P4I">
+                                                <rect key="frame" x="241.5" y="0.0" width="79.5" height="86.5"/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="tJG-Ac-BM3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-2u-Ss9">
+                                        <rect key="frame" x="0.0" y="351" width="321" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-sC-lX5">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="87"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="YLf-DS-oTa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faQ-MC-fte">
+                                                <rect key="frame" x="161" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="jEs-xM-IjJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dotButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="Aye-eW-XKr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIT-Vd-qPx">
+                                                <rect key="frame" x="241.5" y="0.0" width="79.5" height="87"/>
+                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operationButtonPressed:" destination="J0Y-DV-hsx" eventType="touchUpInside" id="LmA-mV-FAG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wIT-Vd-qPx" firstAttribute="width" secondItem="RZ3-uh-P4I" secondAttribute="width" id="7JF-nm-8eM"/>
+                                    <constraint firstItem="faQ-MC-fte" firstAttribute="width" secondItem="8ei-B4-XDF" secondAttribute="width" id="gtg-pa-pN1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jko-um-Pxv" firstAttribute="top" secondItem="DU7-zf-ubT" secondAttribute="bottom" id="6df-Qg-RZU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Wl4-Dz-NCZ" secondAttribute="bottom" id="RpJ-aj-LhD"/>
+                            <constraint firstItem="Wl4-Dz-NCZ" firstAttribute="leading" secondItem="OpO-eK-0Ny" secondAttribute="leading" id="VBN-TW-bpf"/>
+                            <constraint firstItem="jko-um-Pxv" firstAttribute="leading" secondItem="OpO-eK-0Ny" secondAttribute="leadingMargin" id="W1G-3G-1uw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jko-um-Pxv" secondAttribute="trailing" id="oTd-pr-7Ma"/>
+                            <constraint firstItem="Wl4-Dz-NCZ" firstAttribute="top" secondItem="jko-um-Pxv" secondAttribute="bottom" constant="10" id="rWr-XY-DiF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="5mR-ar-sZr" id="MfH-7o-nFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IQ-mb-W3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772.5" y="795.42253521126759"/>
+        </scene>
         <!--About us-->
         <scene sceneID="xq1-Ww-TRB">
             <objects>
@@ -720,6 +1026,522 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyA-7P-sbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+        <!--Numeral System Calculator View Controller-->
+        <scene sceneID="cku-OO-r3U">
+            <objects>
+                <viewController id="XPc-iw-eHn" customClass="NumeralSystemCalculatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vl3-mK-hnd"/>
+                        <viewControllerLayoutGuide type="bottom" id="eFe-sg-4Yo"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.94999998807907104" contentMode="scaleToFill" id="un8-Iq-z5N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-S7-cqH" userLabel="display">
+                                <rect key="frame" x="16" y="20" width="288" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="dec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iee-28-FQg">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-hr-d6z">
+                                        <rect key="frame" x="0.0" y="16" width="288" height="84"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wgS-d2-fHF" userLabel="buttons">
+                                <rect key="frame" x="0.0" y="130" width="320" height="438"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-0q-4ui">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lg3-Lt-SOJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="72"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                <state key="normal" title="hex">
+                                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numeralSystemButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="x1t-0W-d3O"/>
+                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="e0V-DJ-3ip"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovU-bw-eRI">
+                                                <rect key="frame" x="80.5" y="0.0" width="79" height="72"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                <state key="normal" title="dec">
+                                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numeralSystemButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Dkk-5X-uaZ"/>
+                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Z1O-f4-m2t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lt-YT-17C">
+                                                <rect key="frame" x="160.5" y="0.0" width="79.5" height="72"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                <state key="normal" title="oct">
+                                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numeralSystemButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="pt9-FM-YXZ"/>
+                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="qKS-Sm-1HW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZZ-JW-7HN">
+                                                <rect key="frame" x="241" y="0.0" width="79" height="72"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                <state key="normal" title="bin">
+                                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="numeralSystemButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="SJD-qG-yyc"/>
+                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="0hg-Kk-NM4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="B3S-CN-jAu">
+                                        <rect key="frame" x="0.0" y="73" width="320" height="365"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="c8F-Z9-zi4" userLabel="Digits">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="365"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-Xl-JzE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="72.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMN-77-Ump">
+                                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="72.5"/>
+                                                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                                                <state key="normal" title="AC">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="GyB-Ml-9Pq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3t-Hv-nKe">
+                                                                <rect key="frame" x="128.5" y="0.0" width="63.5" height="72.5"/>
+                                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                                <state key="normal" title="÷">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="J1z-HG-aeh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzN-YK-TjH">
+                                                                <rect key="frame" x="193" y="0.0" width="63" height="72.5"/>
+                                                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                                <state key="normal" title="×">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Gol-JF-uSB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="QIY-W9-vsS">
+                                                        <rect key="frame" x="0.0" y="73.5" width="256" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9G-lw-1r5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="pGf-bM-jFi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9h-ys-wDY">
+                                                                <rect key="frame" x="64.5" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="K0M-74-UBC"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6La-cX-OlH">
+                                                                <rect key="frame" x="128.5" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="69u-kq-2Jg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMS-ob-yk5">
+                                                                <rect key="frame" x="193" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="F">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="UF3-C6-jVA"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pbg-eD-hRS">
+                                                        <rect key="frame" x="0.0" y="146.5" width="256" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TF7-Lq-DZD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="EN2-iM-cNa"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-ch-2Vu">
+                                                                <rect key="frame" x="64.5" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Fps-g5-mmb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2o-bS-5uk">
+                                                                <rect key="frame" x="128.5" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="VbM-Cl-CCz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUC-Ol-Qbt">
+                                                                <rect key="frame" x="193" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="E">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Bve-zA-P2h"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8U4-79-SF5">
+                                                        <rect key="frame" x="0.0" y="219.5" width="256" height="72.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5R-UA-ISS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="72.5"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="w1c-XP-LEG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-D4-aaX">
+                                                                <rect key="frame" x="64.5" y="0.0" width="63" height="72.5"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="MmU-Cv-mnJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzA-x0-ta5">
+                                                                <rect key="frame" x="128.5" y="0.0" width="63.5" height="72.5"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="HQw-Nm-cJE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXq-a5-hga">
+                                                                <rect key="frame" x="193" y="0.0" width="63" height="72.5"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="D">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="vHV-e0-fgf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qlV-g7-V2t">
+                                                        <rect key="frame" x="0.0" y="293" width="256" height="72"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efK-jJ-uGZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="eXZ-Sj-7rQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUT-UB-KpF">
+                                                                <rect key="frame" x="64.5" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="A">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="p1e-Sc-w4C"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8o-Rb-0j1">
+                                                                <rect key="frame" x="128.5" y="0.0" width="63.5" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="B">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="ZRD-th-v6I"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJU-gv-bdv">
+                                                                <rect key="frame" x="193" y="0.0" width="63" height="72"/>
+                                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                                                                <state key="normal" title="C">
+                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="ocO-HI-gGW"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="O3t-Hv-nKe" firstAttribute="width" secondItem="6La-cX-OlH" secondAttribute="width" id="8Jw-DT-qO2"/>
+                                                    <constraint firstItem="FzN-YK-TjH" firstAttribute="width" secondItem="IMS-ob-yk5" secondAttribute="width" id="kxi-Xj-Brw"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Bxv-Qi-h09">
+                                                <rect key="frame" x="257" y="0.0" width="63" height="365"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZC-Wr-KlM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63" height="72.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="wHD-8P-pII"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnN-Gu-qhE">
+                                                        <rect key="frame" x="0.0" y="73.5" width="63" height="145"/>
+                                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="EEf-Fm-glx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWY-jg-m8V">
+                                                        <rect key="frame" x="0.0" y="219.5" width="63" height="145.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="0yh-3m-Ied"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="vnN-Gu-qhE" firstAttribute="height" secondItem="YWY-jg-m8V" secondAttribute="height" id="0jC-Wj-cIZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RZC-Wr-KlM" firstAttribute="height" secondItem="FzN-YK-TjH" secondAttribute="height" id="8xi-x6-96r"/>
+                                            <constraint firstItem="RZC-Wr-KlM" firstAttribute="width" secondItem="FzN-YK-TjH" secondAttribute="width" id="TDC-ue-zuG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lg3-Lt-SOJ" firstAttribute="height" secondItem="tMN-77-Ump" secondAttribute="height" id="iiM-hN-gO2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ln5-S7-cqH" firstAttribute="centerX" secondItem="wgS-d2-fHF" secondAttribute="centerX" id="6UA-vk-Sal"/>
+                            <constraint firstItem="wgS-d2-fHF" firstAttribute="leading" secondItem="un8-Iq-z5N" secondAttribute="leading" id="CFr-v9-dtv"/>
+                            <constraint firstItem="Ln5-S7-cqH" firstAttribute="top" secondItem="Vl3-mK-hnd" secondAttribute="bottom" id="MQJ-3F-7ut"/>
+                            <constraint firstItem="wgS-d2-fHF" firstAttribute="top" secondItem="un8-Iq-z5N" secondAttribute="top" constant="130" id="bnu-aP-6nt"/>
+                            <constraint firstItem="Ln5-S7-cqH" firstAttribute="leading" secondItem="un8-Iq-z5N" secondAttribute="leadingMargin" id="iEO-Bj-Ytj"/>
+                            <constraint firstAttribute="trailing" secondItem="wgS-d2-fHF" secondAttribute="trailing" id="kAY-FQ-6mX"/>
+                            <constraint firstItem="wgS-d2-fHF" firstAttribute="bottom" secondItem="eFe-sg-4Yo" secondAttribute="top" id="mhm-Gc-YF2"/>
+                            <constraint firstItem="wgS-d2-fHF" firstAttribute="top" secondItem="Ln5-S7-cqH" secondAttribute="bottom" constant="10" id="qLe-ue-fUD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="XZ2-hr-d6z" id="bQS-zP-nMN"/>
+                        <outlet property="numeralSystemLabel" destination="iee-28-FQg" id="RPR-hu-xj3"/>
+                        <outletCollection property="allButtons" destination="tMN-77-Ump" id="AWK-CY-8Ma"/>
+                        <outletCollection property="allButtons" destination="O3t-Hv-nKe" id="Ind-II-YHZ"/>
+                        <outletCollection property="allButtons" destination="FzN-YK-TjH" id="1Pw-RQ-0DT"/>
+                        <outletCollection property="allButtons" destination="RZC-Wr-KlM" id="PzG-He-W5B"/>
+                        <outletCollection property="allButtons" destination="vnN-Gu-qhE" id="6A0-E5-16z"/>
+                        <outletCollection property="allButtons" destination="YWY-jg-m8V" id="qyA-Qs-DOh"/>
+                        <outletCollection property="allButtons" destination="IMS-ob-yk5" id="8Bb-aX-LRF"/>
+                        <outletCollection property="allButtons" destination="6La-cX-OlH" id="huG-BU-Mmq"/>
+                        <outletCollection property="allButtons" destination="T9h-ys-wDY" id="F39-GM-fOu"/>
+                        <outletCollection property="allButtons" destination="l9G-lw-1r5" id="VNt-f7-57v"/>
+                        <outletCollection property="allButtons" destination="TF7-Lq-DZD" id="LtI-JN-L50"/>
+                        <outletCollection property="allButtons" destination="ygh-ch-2Vu" id="EOa-RE-61h"/>
+                        <outletCollection property="allButtons" destination="m2o-bS-5uk" id="sDW-aX-Azn"/>
+                        <outletCollection property="allButtons" destination="lUC-Ol-Qbt" id="IPn-Pt-Cx6"/>
+                        <outletCollection property="allButtons" destination="E5R-UA-ISS" id="lgG-Xl-XN1"/>
+                        <outletCollection property="allButtons" destination="XpX-D4-aaX" id="1MB-PK-akf"/>
+                        <outletCollection property="allButtons" destination="dzA-x0-ta5" id="GIt-m1-r6f"/>
+                        <outletCollection property="allButtons" destination="fXq-a5-hga" id="k91-BY-dm4"/>
+                        <outletCollection property="allButtons" destination="efK-jJ-uGZ" id="gjS-o5-6j3"/>
+                        <outletCollection property="allButtons" destination="qUT-UB-KpF" id="yz5-Ka-XUk"/>
+                        <outletCollection property="allButtons" destination="E8o-Rb-0j1" id="PAq-mD-iui"/>
+                        <outletCollection property="allButtons" destination="QJU-gv-bdv" id="TfA-6y-s27"/>
+                        <outletCollection property="octDisableButtons" destination="T9h-ys-wDY" id="IxU-dy-wrk"/>
+                        <outletCollection property="octDisableButtons" destination="6La-cX-OlH" id="0sW-Fe-fe2"/>
+                        <outletCollection property="octDisableButtons" destination="IMS-ob-yk5" id="OsV-zC-2If"/>
+                        <outletCollection property="octDisableButtons" destination="lUC-Ol-Qbt" id="k5S-TG-ywB"/>
+                        <outletCollection property="octDisableButtons" destination="fXq-a5-hga" id="Oyz-jy-8H2"/>
+                        <outletCollection property="octDisableButtons" destination="QJU-gv-bdv" id="sos-Xu-OvS"/>
+                        <outletCollection property="octDisableButtons" destination="E8o-Rb-0j1" id="oDr-3n-liY"/>
+                        <outletCollection property="octDisableButtons" destination="qUT-UB-KpF" id="1sT-jg-o5e"/>
+                        <outletCollection property="binDisableButtons" destination="IMS-ob-yk5" id="eot-gu-amD"/>
+                        <outletCollection property="binDisableButtons" destination="6La-cX-OlH" id="1xw-Mi-4tv"/>
+                        <outletCollection property="binDisableButtons" destination="T9h-ys-wDY" id="OR3-0O-O0e"/>
+                        <outletCollection property="binDisableButtons" destination="l9G-lw-1r5" id="8XT-HI-Rpc"/>
+                        <outletCollection property="binDisableButtons" destination="lUC-Ol-Qbt" id="vsk-tb-wBL"/>
+                        <outletCollection property="binDisableButtons" destination="m2o-bS-5uk" id="ScM-rm-Mus"/>
+                        <outletCollection property="binDisableButtons" destination="ygh-ch-2Vu" id="k35-qS-ZaL"/>
+                        <outletCollection property="binDisableButtons" destination="TF7-Lq-DZD" id="XJn-TI-CeW"/>
+                        <outletCollection property="binDisableButtons" destination="fXq-a5-hga" id="Ugg-eA-TFx"/>
+                        <outletCollection property="binDisableButtons" destination="dzA-x0-ta5" id="3PF-y0-e1g"/>
+                        <outletCollection property="binDisableButtons" destination="XpX-D4-aaX" id="AvN-Lc-QrZ"/>
+                        <outletCollection property="binDisableButtons" destination="QJU-gv-bdv" id="O17-3W-IGg"/>
+                        <outletCollection property="binDisableButtons" destination="E8o-Rb-0j1" id="Dhj-Vu-R7d"/>
+                        <outletCollection property="binDisableButtons" destination="qUT-UB-KpF" id="duu-pi-Eec"/>
+                        <outletCollection property="decDisableButtons" destination="IMS-ob-yk5" id="Rm3-6O-GFo"/>
+                        <outletCollection property="decDisableButtons" destination="lUC-Ol-Qbt" id="QNt-Jm-q5r"/>
+                        <outletCollection property="decDisableButtons" destination="fXq-a5-hga" id="WOl-2i-Iqi"/>
+                        <outletCollection property="decDisableButtons" destination="QJU-gv-bdv" id="kaA-Y5-Lse"/>
+                        <outletCollection property="decDisableButtons" destination="E8o-Rb-0j1" id="U0T-xO-wE8"/>
+                        <outletCollection property="decDisableButtons" destination="qUT-UB-KpF" id="fgq-oz-ofv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm2-za-Hg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" id="YjM-SM-fEV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-3K-8Ez">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="72"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="Stg-ch-wT3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqx-HM-NvI">
+                            <rect key="frame" x="64" y="0.0" width="63.5" height="72"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="L6C-0g-TB9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZv-cc-0oZ">
+                            <rect key="frame" x="128.5" y="0.0" width="63" height="72"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="uz6-7A-HtE"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwQ-wY-fbb">
+                            <rect key="frame" x="192.5" y="0.0" width="63.5" height="72"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="digitButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="oY6-gN-aS5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bC-x0-hlu">
+                            <rect key="frame" x="257" y="0.0" width="63" height="72"/>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
+                            <state key="normal" title="×">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonPressed:" destination="XPc-iw-eHn" eventType="touchUpInside" id="9Ad-Nr-QTI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="773" y="1568"/>
         </scene>
     </scenes>
 </document>
