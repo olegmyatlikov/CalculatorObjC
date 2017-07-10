@@ -22,11 +22,10 @@
 @property (weak, nonatomic) IBOutlet UIStackView *allButtonsStackView;
 @property (weak, nonatomic) IBOutlet UIStackView *numeralSystemStackView;
 
-@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
-// buttons witch should be disabled if user chose one of numeral systems (hex, oct or bin)
-@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *hexDisableButtons;
-@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *octDisableButtons;
-@property (weak, nonatomic) IBOutletCollection(UIButton) NSArray *binDisableButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *allButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *hexDisableButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *octDisableButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *binDisableButtons;
 
 @end
 
