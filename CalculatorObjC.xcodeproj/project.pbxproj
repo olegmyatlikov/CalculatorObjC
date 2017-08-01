@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C414B731F124247005AB9F5 /* SimpleCalcilatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414B721F124247005AB9F5 /* SimpleCalcilatorViewController.m */; };
+		7C414B771F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414B761F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.m */; };
+		7C414B7A1F12ADF9005AB9F5 /* EngineerCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C414B791F12ADF9005AB9F5 /* EngineerCalculatorViewController.m */; };
 		84066BFB1EDE8788004A64E3 /* HexNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFA1EDE8788004A64E3 /* HexNumeralSystem.m */; };
 		84066BFE1EDE8810004A64E3 /* OctNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066BFD1EDE8810004A64E3 /* OctNumeralSystem.m */; };
 		84066C011EDE8830004A64E3 /* BinNumeralSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066C001EDE8830004A64E3 /* BinNumeralSystem.m */; };
@@ -26,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C414B711F124247005AB9F5 /* SimpleCalcilatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCalcilatorViewController.h; sourceTree = "<group>"; };
+		7C414B721F124247005AB9F5 /* SimpleCalcilatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCalcilatorViewController.m; sourceTree = "<group>"; };
+		7C414B751F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumeralSystemCalculatorViewController.h; sourceTree = "<group>"; };
+		7C414B761F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumeralSystemCalculatorViewController.m; sourceTree = "<group>"; };
+		7C414B781F12ADF9005AB9F5 /* EngineerCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineerCalculatorViewController.h; sourceTree = "<group>"; };
+		7C414B791F12ADF9005AB9F5 /* EngineerCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngineerCalculatorViewController.m; sourceTree = "<group>"; };
 		84066BF91EDE8788004A64E3 /* HexNumeralSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexNumeralSystem.h; sourceTree = "<group>"; };
 		84066BFA1EDE8788004A64E3 /* HexNumeralSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexNumeralSystem.m; sourceTree = "<group>"; };
 		84066BFC1EDE8810004A64E3 /* OctNumeralSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctNumeralSystem.h; sourceTree = "<group>"; };
@@ -84,6 +93,19 @@
 			name = "Numeral Systems";
 			sourceTree = "<group>";
 		};
+		7C414B741F12424D005AB9F5 /* CalculatorVCs */ = {
+			isa = PBXGroup;
+			children = (
+				7C414B711F124247005AB9F5 /* SimpleCalcilatorViewController.h */,
+				7C414B721F124247005AB9F5 /* SimpleCalcilatorViewController.m */,
+				7C414B751F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.h */,
+				7C414B761F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.m */,
+				7C414B781F12ADF9005AB9F5 /* EngineerCalculatorViewController.h */,
+				7C414B791F12ADF9005AB9F5 /* EngineerCalculatorViewController.m */,
+			);
+			name = CalculatorVCs;
+			sourceTree = "<group>";
+		};
 		846021B81EC8524700C11C01 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +132,7 @@
 				846021CA1EC8524700C11C01 /* ViewController.h */,
 				846021CB1EC8524700C11C01 /* ViewController.m */,
 				846021CD1EC8524700C11C01 /* Main.storyboard */,
+				7C414B741F12424D005AB9F5 /* CalculatorVCs */,
 				36068B081EE6B2B70088EC2D /* Numeral Systems */,
 				84CDDFBF1ECF109C00CCC4AB /* About us */,
 				84CDDFBE1ECF108900CCC4AB /* Copyright */,
@@ -230,9 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C414B771F128A5E005AB9F5 /* NumeralSystemCalculatorViewController.m in Sources */,
+				7C414B731F124247005AB9F5 /* SimpleCalcilatorViewController.m in Sources */,
 				84A5DD2E1ECDC57E0055F834 /* AboutUsViewController.m in Sources */,
 				84A5DD291ECDA27B0055F834 /* CopyrightViewController.m in Sources */,
 				846021CC1EC8524700C11C01 /* ViewController.m in Sources */,
+				7C414B7A1F12ADF9005AB9F5 /* EngineerCalculatorViewController.m in Sources */,
 				84066BFE1EDE8810004A64E3 /* OctNumeralSystem.m in Sources */,
 				846021C91EC8524700C11C01 /* AppDelegate.m in Sources */,
 				84066BFB1EDE8788004A64E3 /* HexNumeralSystem.m in Sources */,
