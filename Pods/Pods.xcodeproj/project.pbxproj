@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B5D3A1EE797D215D628190318F02FD /* REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EC7E357E99B0E24B461873DD4E07D20 /* REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DE90590ADB372C618FD42EB39BC20AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957E8D11F4B0DBBA28B72ED102348358 /* Foundation.framework */; };
+		2F84353C864E3F8A2385E18577F960B5 /* UIImage+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C62707348E58E01B1F6CAAF5FA03EC8 /* UIImage+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48268B55E3ACB466179D1212C9D8B4B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D5EA782278C6439D39F32E5FDE0BB1 /* QuartzCore.framework */; };
+		67CE3860A4464BF543B448F349BB797B /* UIView+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E729FB1A6A7159D70987D825039A72FB /* UIView+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68D5949B1E22CF94F61B232C39FE74DF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF57606DF7D7958533DAEFACA4EB986 /* Accelerate.framework */; };
+		71C6D3E0753C0F2ED78812059E3635C9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF6B6E343F0635AFDD2AE9096E80F04 /* RECommonFunctions.m */; };
+		861836256ED68B9A36C3AA2007EA0B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957E8D11F4B0DBBA28B72ED102348358 /* Foundation.framework */; };
+		8727AF85A2AE9B16F6132A479FC431B8 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415289339658C7621D821875DDFA3D4 /* UIView+REFrostedViewController.m */; };
+		A49859AC73C9FD7E0B8A81F1FFDAD9E4 /* REFrostedContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E107E72950BDE96BDB2F9AE6BC297A8 /* REFrostedContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5C13250F241EC8CC905E6671BA18A0 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CF1CEED875724D17E53876D9A1434 /* UIImage+REFrostedViewController.m */; };
+		AADB249571A36A71F64493DA3FA64AF8 /* REFrostedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C78D6756BB393C149F0691BBEF146 /* REFrostedViewController-dummy.m */; };
+		B6FAB89E5C38E46B685FCE63AAD6657F /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA12C88EB70C2B1855AB53C109A090 /* REFrostedViewController.m */; };
+		C29B99750F51E46AA311470FF82928AE /* UIViewController+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7C92941967DC198CEC4742B586271D /* UIViewController+REFrostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE7DEDBCB36B5C95CA44E81B560C74A8 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB0F86717AEE0279A1FDFCB69C44996 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6BB65556F830E363AFE2A34D279B494 /* Pods-CalculatorObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B993FDF010E0AE921279D3527ACA2F31 /* Pods-CalculatorObjC-dummy.m */; };
+		F799C1BA6B429465072ADBE012E32883 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48718592CE836F5294C9BBB72EB55B4E /* UIViewController+REFrostedViewController.m */; };
+		FF2E808382D80D949A47841CCDC55F35 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D1CFC165A6B8B96AF38070383F77C1 /* REFrostedContainerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9402C2EAB37B9A52F462B86A14F269BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD97D9E008A58228A62E3466C4B8F097;
+			remoteInfo = REFrostedViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0097360CCC6B0A03B59BE788415DFFC4 /* REFrostedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "REFrostedViewController-prefix.pch"; sourceTree = "<group>"; };
+		1D7C92941967DC198CEC4742B586271D /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+REFrostedViewController.h"; path = "REFrostedViewController/UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		2DF6B6E343F0635AFDD2AE9096E80F04 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = REFrostedViewController/RECommonFunctions.m; sourceTree = "<group>"; };
+		33D1CFC165A6B8B96AF38070383F77C1 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedContainerViewController.m; path = REFrostedViewController/REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		3AF57606DF7D7958533DAEFACA4EB986 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		3E107E72950BDE96BDB2F9AE6BC297A8 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedContainerViewController.h; path = REFrostedViewController/REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		3FEA12C88EB70C2B1855AB53C109A090 /* REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedViewController.m; path = REFrostedViewController/REFrostedViewController.m; sourceTree = "<group>"; };
+		43D5EA782278C6439D39F32E5FDE0BB1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		454AA22DCA90F129F1D3A2F353CAE012 /* Pods-CalculatorObjC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalculatorObjC-resources.sh"; sourceTree = "<group>"; };
+		48718592CE836F5294C9BBB72EB55B4E /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+REFrostedViewController.m"; path = "REFrostedViewController/UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		5EC7E357E99B0E24B461873DD4E07D20 /* REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedViewController.h; path = REFrostedViewController/REFrostedViewController.h; sourceTree = "<group>"; };
+		6462029C06605CB64FEEF9AFE8AB37E1 /* Pods-CalculatorObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalculatorObjC.release.xcconfig"; sourceTree = "<group>"; };
+		6A6E1A025730CDC52C2DB315D1C996D6 /* Pods-CalculatorObjC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalculatorObjC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A9C78D6756BB393C149F0691BBEF146 /* REFrostedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "REFrostedViewController-dummy.m"; sourceTree = "<group>"; };
+		6C62707348E58E01B1F6CAAF5FA03EC8 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+REFrostedViewController.h"; path = "REFrostedViewController/UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		754F72DF288BC12290E3099E9561CFE4 /* Pods-CalculatorObjC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalculatorObjC-frameworks.sh"; sourceTree = "<group>"; };
+		7BE71A10F044B48B10DD00CC67A8F652 /* Pods-CalculatorObjC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalculatorObjC-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E327DEA80A196EBEEE038DADDDD341 /* Pods-CalculatorObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalculatorObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		9415289339658C7621D821875DDFA3D4 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+REFrostedViewController.m"; path = "REFrostedViewController/UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		957E8D11F4B0DBBA28B72ED102348358 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ACB934F6E3B4D2574EFB58CBA9FAA127 /* libPods-CalculatorObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CalculatorObjC.a"; path = "libPods-CalculatorObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B993FDF010E0AE921279D3527ACA2F31 /* Pods-CalculatorObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalculatorObjC-dummy.m"; sourceTree = "<group>"; };
+		C53CF1CEED875724D17E53876D9A1434 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+REFrostedViewController.m"; path = "REFrostedViewController/UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		E729FB1A6A7159D70987D825039A72FB /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+REFrostedViewController.h"; path = "REFrostedViewController/UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		EDEDD00691336C5C8D346CA8D8CFAC81 /* REFrostedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = REFrostedViewController.xcconfig; sourceTree = "<group>"; };
+		F5969792825486E23419634BA6AD0D7C /* libREFrostedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libREFrostedViewController.a; path = libREFrostedViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB0F86717AEE0279A1FDFCB69C44996 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = REFrostedViewController/RECommonFunctions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7230C6FE13661613B466C4CA35200FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68D5949B1E22CF94F61B232C39FE74DF /* Accelerate.framework in Frameworks */,
+				0DE90590ADB372C618FD42EB39BC20AD /* Foundation.framework in Frameworks */,
+				48268B55E3ACB466179D1212C9D8B4B9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD83FA69BEBBFFB229E10E9EB97BE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861836256ED68B9A36C3AA2007EA0B6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB870A96AB09507BA8548A217E6AE8D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F39936942B893000A32E217C9DF0328 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDEDD00691336C5C8D346CA8D8CFAC81 /* REFrostedViewController.xcconfig */,
+				6A9C78D6756BB393C149F0691BBEF146 /* REFrostedViewController-dummy.m */,
+				0097360CCC6B0A03B59BE788415DFFC4 /* REFrostedViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/REFrostedViewController";
+			sourceTree = "<group>";
+		};
+		6EB870A96AB09507BA8548A217E6AE8D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AF57606DF7D7958533DAEFACA4EB986 /* Accelerate.framework */,
+				957E8D11F4B0DBBA28B72ED102348358 /* Foundation.framework */,
+				43D5EA782278C6439D39F32E5FDE0BB1 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C8EBDAD4DA254B3160900E60759609E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8680B48D90B67E6B7C9EC959A413630 /* REFrostedViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				7C8EBDAD4DA254B3160900E60759609E /* Pods */,
+				EDA77DC8669686807B003D9F4CAF5363 /* Products */,
+				BB02AB303F4A58088AB5997208D0A102 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BB02AB303F4A58088AB5997208D0A102 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF165E6AAFBD2CDAC49CF4289BD791D /* Pods-CalculatorObjC */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EDA77DC8669686807B003D9F4CAF5363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACB934F6E3B4D2574EFB58CBA9FAA127 /* libPods-CalculatorObjC.a */,
+				F5969792825486E23419634BA6AD0D7C /* libREFrostedViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8680B48D90B67E6B7C9EC959A413630 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0F86717AEE0279A1FDFCB69C44996 /* RECommonFunctions.h */,
+				2DF6B6E343F0635AFDD2AE9096E80F04 /* RECommonFunctions.m */,
+				3E107E72950BDE96BDB2F9AE6BC297A8 /* REFrostedContainerViewController.h */,
+				33D1CFC165A6B8B96AF38070383F77C1 /* REFrostedContainerViewController.m */,
+				5EC7E357E99B0E24B461873DD4E07D20 /* REFrostedViewController.h */,
+				3FEA12C88EB70C2B1855AB53C109A090 /* REFrostedViewController.m */,
+				6C62707348E58E01B1F6CAAF5FA03EC8 /* UIImage+REFrostedViewController.h */,
+				C53CF1CEED875724D17E53876D9A1434 /* UIImage+REFrostedViewController.m */,
+				E729FB1A6A7159D70987D825039A72FB /* UIView+REFrostedViewController.h */,
+				9415289339658C7621D821875DDFA3D4 /* UIView+REFrostedViewController.m */,
+				1D7C92941967DC198CEC4742B586271D /* UIViewController+REFrostedViewController.h */,
+				48718592CE836F5294C9BBB72EB55B4E /* UIViewController+REFrostedViewController.m */,
+				1F39936942B893000A32E217C9DF0328 /* Support Files */,
+			);
+			name = REFrostedViewController;
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		FAF165E6AAFBD2CDAC49CF4289BD791D /* Pods-CalculatorObjC */ = {
+			isa = PBXGroup;
+			children = (
+				6A6E1A025730CDC52C2DB315D1C996D6 /* Pods-CalculatorObjC-acknowledgements.markdown */,
+				7BE71A10F044B48B10DD00CC67A8F652 /* Pods-CalculatorObjC-acknowledgements.plist */,
+				B993FDF010E0AE921279D3527ACA2F31 /* Pods-CalculatorObjC-dummy.m */,
+				754F72DF288BC12290E3099E9561CFE4 /* Pods-CalculatorObjC-frameworks.sh */,
+				454AA22DCA90F129F1D3A2F353CAE012 /* Pods-CalculatorObjC-resources.sh */,
+				93E327DEA80A196EBEEE038DADDDD341 /* Pods-CalculatorObjC.debug.xcconfig */,
+				6462029C06605CB64FEEF9AFE8AB37E1 /* Pods-CalculatorObjC.release.xcconfig */,
+			);
+			name = "Pods-CalculatorObjC";
+			path = "Target Support Files/Pods-CalculatorObjC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A2DA4476CF097CCFEF0EBCD0691A94D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7DEDBCB36B5C95CA44E81B560C74A8 /* RECommonFunctions.h in Headers */,
+				A49859AC73C9FD7E0B8A81F1FFDAD9E4 /* REFrostedContainerViewController.h in Headers */,
+				01B5D3A1EE797D215D628190318F02FD /* REFrostedViewController.h in Headers */,
+				2F84353C864E3F8A2385E18577F960B5 /* UIImage+REFrostedViewController.h in Headers */,
+				67CE3860A4464BF543B448F349BB797B /* UIView+REFrostedViewController.h in Headers */,
+				C29B99750F51E46AA311470FF82928AE /* UIViewController+REFrostedViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C01C9A4FA95F9969A0A4F89DB50A305 /* Pods-CalculatorObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95CEC062EF61EA69F96C582728FB551 /* Build configuration list for PBXNativeTarget "Pods-CalculatorObjC" */;
+			buildPhases = (
+				148992BE517B87368601DCB4264ED96B /* Sources */,
+				BCD83FA69BEBBFFB229E10E9EB97BE74 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41E0D8E30DFF1CA4CA9430B8574A267 /* PBXTargetDependency */,
+			);
+			name = "Pods-CalculatorObjC";
+			productName = "Pods-CalculatorObjC";
+			productReference = ACB934F6E3B4D2574EFB58CBA9FAA127 /* libPods-CalculatorObjC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD97D9E008A58228A62E3466C4B8F097 /* REFrostedViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEBFE92D45ECEB4C717912152C0FB60A /* Build configuration list for PBXNativeTarget "REFrostedViewController" */;
+			buildPhases = (
+				F9A996780C3075353CD2BD2543789F2E /* Sources */,
+				7230C6FE13661613B466C4CA35200FF3 /* Frameworks */,
+				4A2DA4476CF097CCFEF0EBCD0691A94D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REFrostedViewController;
+			productName = REFrostedViewController;
+			productReference = F5969792825486E23419634BA6AD0D7C /* libREFrostedViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EDA77DC8669686807B003D9F4CAF5363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C01C9A4FA95F9969A0A4F89DB50A305 /* Pods-CalculatorObjC */,
+				DD97D9E008A58228A62E3466C4B8F097 /* REFrostedViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		148992BE517B87368601DCB4264ED96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BB65556F830E363AFE2A34D279B494 /* Pods-CalculatorObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A996780C3075353CD2BD2543789F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C6D3E0753C0F2ED78812059E3635C9 /* RECommonFunctions.m in Sources */,
+				FF2E808382D80D949A47841CCDC55F35 /* REFrostedContainerViewController.m in Sources */,
+				AADB249571A36A71F64493DA3FA64AF8 /* REFrostedViewController-dummy.m in Sources */,
+				B6FAB89E5C38E46B685FCE63AAD6657F /* REFrostedViewController.m in Sources */,
+				AA5C13250F241EC8CC905E6671BA18A0 /* UIImage+REFrostedViewController.m in Sources */,
+				8727AF85A2AE9B16F6132A479FC431B8 /* UIView+REFrostedViewController.m in Sources */,
+				F799C1BA6B429465072ADBE012E32883 /* UIViewController+REFrostedViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41E0D8E30DFF1CA4CA9430B8574A267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = REFrostedViewController;
+			target = DD97D9E008A58228A62E3466C4B8F097 /* REFrostedViewController */;
+			targetProxy = 9402C2EAB37B9A52F462B86A14F269BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28F45CEBB13C920455947E7BDC414678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6462029C06605CB64FEEF9AFE8AB37E1 /* Pods-CalculatorObjC.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		356FB6E1484085E0DC03CC7BBA450875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEDD00691336C5C8D346CA8D8CFAC81 /* REFrostedViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/REFrostedViewController/REFrostedViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C40C3FC2EE445706FC34A7B3B719E726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E327DEA80A196EBEEE038DADDDD341 /* Pods-CalculatorObjC.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F64D06D24C6C7EFF7355E0DE49DC4C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEDD00691336C5C8D346CA8D8CFAC81 /* REFrostedViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/REFrostedViewController/REFrostedViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBFE92D45ECEB4C717912152C0FB60A /* Build configuration list for PBXNativeTarget "REFrostedViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				356FB6E1484085E0DC03CC7BBA450875 /* Debug */,
+				F64D06D24C6C7EFF7355E0DE49DC4C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95CEC062EF61EA69F96C582728FB551 /* Build configuration list for PBXNativeTarget "Pods-CalculatorObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40C3FC2EE445706FC34A7B3B719E726 /* Debug */,
+				28F45CEBB13C920455947E7BDC414678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

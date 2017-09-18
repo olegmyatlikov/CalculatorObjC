@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="391-5D-2P4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pTn-Vs-Oz1">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="allInOneCalculator" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -685,12 +685,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770.39999999999998" y="34.632683658170919"/>
+            <point key="canvasLocation" x="770" y="-18"/>
         </scene>
         <!--Simple Calcilator View Controller-->
         <scene sceneID="wgr-rq-gWC">
             <objects>
-                <viewController id="J0Y-DV-hsx" customClass="SimpleCalcilatorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="simpleCalculator" id="J0Y-DV-hsx" customClass="SimpleCalcilatorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DU7-zf-ubT"/>
                         <viewControllerLayoutGuide type="bottom" id="jvc-3E-yS0"/>
@@ -700,7 +700,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jko-um-Pxv" userLabel="display">
-                                <rect key="frame" x="20" y="20" width="627" height="100"/>
+                                <rect key="frame" x="20" y="64" width="627" height="100"/>
                                 <subviews>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="5mR-ar-sZr">
                                         <rect key="frame" x="0.0" y="0.0" width="627" height="100"/>
@@ -714,13 +714,13 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-Dz-NCZ" userLabel="buttons">
-                                <rect key="frame" x="0.0" y="130" width="667" height="245"/>
+                                <rect key="frame" x="0.0" y="174" width="667" height="284"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-94-aGP">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-x8-MhI">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="AC">
@@ -731,7 +731,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-vR-kSq">
-                                                <rect key="frame" x="167" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="167" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="32"/>
                                                 <state key="normal" title="±">
@@ -742,7 +742,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-Ah-Yc7">
-                                                <rect key="frame" x="334" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="334" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="28"/>
                                                 <state key="normal" title="﹪">
@@ -753,7 +753,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-sz-7Dz">
-                                                <rect key="frame" x="501" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="501" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <state key="normal" title="÷">
@@ -773,10 +773,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="isM-Fn-xd4">
-                                        <rect key="frame" x="0.0" y="49" width="667" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="57" width="667" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-E4-U2k">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="7">
@@ -787,7 +787,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWY-98-p0G">
-                                                <rect key="frame" x="167" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="167" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="8">
@@ -798,7 +798,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEA-nt-SeW">
-                                                <rect key="frame" x="334" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="334" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="9">
@@ -809,7 +809,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP1-Xv-ijv">
-                                                <rect key="frame" x="501" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="501" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <state key="normal" title="×">
@@ -822,10 +822,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7A-B0-4Rc">
-                                        <rect key="frame" x="0.0" y="98.5" width="667" height="48"/>
+                                        <rect key="frame" x="0.0" y="114" width="667" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opa-nW-PB7">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="4">
@@ -836,7 +836,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b37-0u-1LB">
-                                                <rect key="frame" x="167" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="167" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="5">
@@ -847,7 +847,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zs-Vt-bE6">
-                                                <rect key="frame" x="334" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="334" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="6">
@@ -858,7 +858,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jm1-9U-4cV">
-                                                <rect key="frame" x="501" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="501" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <state key="normal" title="-">
@@ -871,10 +871,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fek-N4-tQa">
-                                        <rect key="frame" x="0.0" y="147.5" width="667" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="171" width="667" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q54-cE-bTs">
-                                                <rect key="frame" x="0.0" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="1">
@@ -885,7 +885,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh0-RH-U3Z">
-                                                <rect key="frame" x="167" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="167" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="2">
@@ -896,7 +896,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ei-B4-XDF">
-                                                <rect key="frame" x="334" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="334" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="3">
@@ -907,7 +907,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ3-uh-P4I">
-                                                <rect key="frame" x="501" y="0.0" width="166" height="48.5"/>
+                                                <rect key="frame" x="501" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <state key="normal" title="+">
@@ -920,10 +920,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-2u-Ss9">
-                                        <rect key="frame" x="0.0" y="197" width="667" height="48"/>
+                                        <rect key="frame" x="0.0" y="228" width="667" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaN-sC-lX5">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title="0">
@@ -934,7 +934,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faQ-MC-fte">
-                                                <rect key="frame" x="334" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="334" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                                 <state key="normal" title=".">
@@ -945,7 +945,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIT-Vd-qPx">
-                                                <rect key="frame" x="501" y="0.0" width="166" height="48"/>
+                                                <rect key="frame" x="501" y="0.0" width="166" height="56"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <state key="normal" title="=">
@@ -975,18 +975,19 @@
                             <constraint firstItem="Wl4-Dz-NCZ" firstAttribute="top" secondItem="jko-um-Pxv" secondAttribute="bottom" constant="10" id="rWr-XY-DiF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AvZ-iK-pMg"/>
                     <connections>
                         <outlet property="displayLabel" destination="5mR-ar-sZr" id="MfH-7o-nFq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4IQ-mb-W3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="735"/>
+            <point key="canvasLocation" x="770" y="687"/>
         </scene>
         <!--About us-->
         <scene sceneID="xq1-Ww-TRB">
             <objects>
-                <viewController id="uKG-Nu-z6Y" customClass="AboutUsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutUs" id="uKG-Nu-z6Y" customClass="AboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="URr-cR-332"/>
                         <viewControllerLayoutGuide type="bottom" id="aTM-bV-bdZ"/>
@@ -999,30 +1000,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6M-wn-GFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="34"/>
+            <point key="canvasLocation" x="1605" y="296"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root View Controller-->
+        <scene sceneID="Vho-fy-Oj2">
+            <objects>
+                <viewController storyboardIdentifier="rootController" id="pTn-Vs-Oz1" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IsC-cL-IpA"/>
+                        <viewControllerLayoutGuide type="bottom" id="apS-44-IvW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MEH-Xb-VMw">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fa-0m-uJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1493" y="1100"/>
+        </scene>
+        <!--Slide Menu View Controller-->
+        <scene sceneID="fuR-UW-cxy">
+            <objects>
+                <tableViewController storyboardIdentifier="menuController" id="nPA-Tj-drz" customClass="SlideMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OcF-Nf-PWI">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="nPA-Tj-drz" id="93u-Qd-uDF"/>
+                            <outlet property="delegate" destination="nPA-Tj-drz" id="CKR-jn-Sfb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rC-aG-hpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="1100"/>
+        </scene>
+        <!--Main Navigation View Controller-->
         <scene sceneID="SP3-ez-6rc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UYR-yw-XKv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="contentController" automaticallyAdjustsScrollViewInsets="NO" id="UYR-yw-XKv" customClass="MainNavigationViewController" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kim-yI-xpJ">
+                    <navigationBar key="navigationBar" hidden="YES" alpha="0.0" contentMode="scaleToFill" id="kim-yI-xpJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nfd-9J-t0P"/>
+                        <segue destination="XPc-iw-eHn" kind="show" id="h3d-7N-FSw"/>
+                        <segue destination="391-5D-2P4" kind="show" id="DGw-GI-E9V"/>
+                        <segue destination="J0Y-DV-hsx" kind="relationship" relationship="rootViewController" id="TTa-E1-qAn"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="OAV-D5-qAX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyA-7P-sbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+            <point key="canvasLocation" x="-50" y="1100"/>
         </scene>
         <!--Numeral System Calculator View Controller-->
         <scene sceneID="cku-OO-r3U">
             <objects>
-                <viewController id="XPc-iw-eHn" customClass="NumeralSystemCalculatorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="numeralSystemCalculator" id="XPc-iw-eHn" customClass="NumeralSystemCalculatorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vl3-mK-hnd"/>
                         <viewControllerLayoutGuide type="bottom" id="eFe-sg-4Yo"/>
@@ -1032,16 +1072,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-S7-cqH" userLabel="display">
-                                <rect key="frame" x="20" y="20" width="627" height="100"/>
+                                <rect key="frame" x="20" y="64" width="627" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="dec" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iee-28-FQg">
-                                        <rect key="frame" x="0.0" y="0.0" width="627" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="627" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-hr-d6z">
-                                        <rect key="frame" x="0.0" y="20.5" width="627" height="79.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="627" height="56"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="60"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1533,12 +1573,12 @@
                     </subviews>
                 </stackView>
             </objects>
-            <point key="canvasLocation" x="770" y="1437"/>
+            <point key="canvasLocation" x="770" y="1385"/>
         </scene>
         <!--Engineer Calculator View Controller-->
         <scene sceneID="V2g-qS-x8m">
             <objects>
-                <viewController id="391-5D-2P4" customClass="EngineerCalculatorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="engineerCalculator" id="391-5D-2P4" customClass="EngineerCalculatorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FLW-BN-zQX"/>
                         <viewControllerLayoutGuide type="bottom" id="IYH-TD-1VO"/>
@@ -1548,7 +1588,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-EB-wWh">
-                                <rect key="frame" x="20" y="20" width="627" height="100"/>
+                                <rect key="frame" x="20" y="64" width="627" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="6yz-iC-Wx5"/>
                                 </constraints>
@@ -1557,13 +1597,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UaM-Vf-2nD">
-                                <rect key="frame" x="0.0" y="120" width="667" height="255"/>
+                                <rect key="frame" x="0.0" y="164" width="667" height="211"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="etq-xe-RBv">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="41.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEr-lf-lb0">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="AC">
@@ -1575,7 +1615,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGg-t3-Jdp">
-                                                <rect key="frame" x="111.5" y="0.0" width="110" height="50"/>
+                                                <rect key="frame" x="111.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="±">
@@ -1587,7 +1627,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69R-BA-8GJ">
-                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="﹪">
@@ -1599,7 +1639,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfa-YU-5QD">
-                                                <rect key="frame" x="334" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="334" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                                 <state key="normal" title="÷">
@@ -1611,7 +1651,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-Dg-fyT">
-                                                <rect key="frame" x="445.5" y="0.0" width="110" height="50"/>
+                                                <rect key="frame" x="445.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="√">
@@ -1623,7 +1663,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CR-jQ-Kh3">
-                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="sin">
@@ -1637,10 +1677,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="I9y-O1-ihe">
-                                        <rect key="frame" x="0.0" y="51" width="667" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="667" height="41.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTo-5l-xyW">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="7">
@@ -1652,7 +1692,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQI-yK-0Do">
-                                                <rect key="frame" x="111.5" y="0.0" width="110" height="50.5"/>
+                                                <rect key="frame" x="111.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="8">
@@ -1664,7 +1704,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-ne-fuJ">
-                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="9">
@@ -1676,7 +1716,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-et-tee">
-                                                <rect key="frame" x="334" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="334" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                                 <state key="normal" title="×">
@@ -1688,7 +1728,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfL-dR-zwT">
-                                                <rect key="frame" x="445.5" y="0.0" width="110" height="50.5"/>
+                                                <rect key="frame" x="445.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="x²">
@@ -1700,7 +1740,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRR-BR-1Jv">
-                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="cos">
@@ -1714,10 +1754,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-sL-m17">
-                                        <rect key="frame" x="0.0" y="102.5" width="667" height="50"/>
+                                        <rect key="frame" x="0.0" y="85" width="667" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkv-am-phi">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="4">
@@ -1729,7 +1769,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jQ-wP-zkv">
-                                                <rect key="frame" x="111.5" y="0.0" width="110" height="50"/>
+                                                <rect key="frame" x="111.5" y="0.0" width="110" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="5">
@@ -1741,7 +1781,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Y-hY-KdY">
-                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="41"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="6">
@@ -1753,7 +1793,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOz-jy-xgm">
-                                                <rect key="frame" x="334" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="334" y="0.0" width="110.5" height="41"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                                 <state key="normal" title="-">
@@ -1765,7 +1805,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mM-6i-ycJ">
-                                                <rect key="frame" x="445.5" y="0.0" width="110" height="50"/>
+                                                <rect key="frame" x="445.5" y="0.0" width="110" height="41"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="xʸ">
@@ -1777,7 +1817,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hey-3P-Rdv">
-                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="41"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="tg">
@@ -1791,10 +1831,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lCM-ou-eJd">
-                                        <rect key="frame" x="0.0" y="153.5" width="667" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="127" width="667" height="41.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-7W-c6Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="1">
@@ -1806,7 +1846,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ2-DJ-qsH">
-                                                <rect key="frame" x="111.5" y="0.0" width="110" height="50.5"/>
+                                                <rect key="frame" x="111.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="2">
@@ -1818,7 +1858,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-VV-cER">
-                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="3">
@@ -1830,7 +1870,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-an-HY6">
-                                                <rect key="frame" x="334" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="334" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                                 <state key="normal" title="+">
@@ -1842,7 +1882,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-oU-yzW">
-                                                <rect key="frame" x="445.5" y="0.0" width="110" height="50.5"/>
+                                                <rect key="frame" x="445.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="π">
@@ -1854,7 +1894,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOZ-ta-GvH">
-                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="50.5"/>
+                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="ctg">
@@ -1868,10 +1908,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-sY-9KN">
-                                        <rect key="frame" x="0.0" y="205" width="667" height="50"/>
+                                        <rect key="frame" x="0.0" y="169.5" width="667" height="41.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deu-33-dYS">
-                                                <rect key="frame" x="0.0" y="0.0" width="221.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="221.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title="0">
@@ -1883,7 +1923,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGG-fB-zXj">
-                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="222.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
                                                 <state key="normal" title=".">
@@ -1895,7 +1935,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QI-GU-LxC">
-                                                <rect key="frame" x="334" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="334" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
                                                 <state key="normal" title="=">
@@ -1907,7 +1947,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-sX-VwV">
-                                                <rect key="frame" x="445.5" y="0.0" width="110" height="50"/>
+                                                <rect key="frame" x="445.5" y="0.0" width="110" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="e">
@@ -1919,7 +1959,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-2C-QkX">
-                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="50"/>
+                                                <rect key="frame" x="556.5" y="0.0" width="110.5" height="41.5"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="22"/>
                                                 <state key="normal" title="log">
@@ -1958,7 +1998,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzN-YT-gFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770.46476761619192" y="2301.5999999999999"/>
+            <point key="canvasLocation" x="770" y="2079"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,7 @@
 
 #import "NumeralSystemCalculatorViewController.h"
 #import "CalculatorModel.h"
+#import <REFrostedViewController.h>
 
 @interface NumeralSystemCalculatorViewController ()
 

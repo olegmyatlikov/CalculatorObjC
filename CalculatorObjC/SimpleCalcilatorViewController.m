@@ -8,6 +8,7 @@
 
 #import "SimpleCalcilatorViewController.h"
 #import "CalculatorModel.h"
+#import <REFrostedViewController.h>
 
 @interface SimpleCalcilatorViewController ()
 
