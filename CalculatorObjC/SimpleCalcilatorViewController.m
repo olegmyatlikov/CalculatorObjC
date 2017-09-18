@@ -8,6 +8,7 @@
 
 #import "SimpleCalcilatorViewController.h"
 #import "CalculatorModel.h"
+#import <REFrostedViewController.h>
 
 @interface SimpleCalcilatorViewController ()
 
@@ -29,6 +30,7 @@ static NSString * const CalculatorDotSymbol = @".";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tabBarController.tabBar setBackgroundColor:[UIColor clearColor]];
     UISwipeGestureRecognizer *swipeOnDispalyRecognizer = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeRecognizer:)] ;
     swipeOnDispalyRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
     [self.displayLabel addGestureRecognizer:swipeOnDispalyRecognizer];
@@ -54,6 +56,17 @@ static NSString * const CalculatorDotSymbol = @".";
 
 - (BOOL)shouldAutorotate {
     return NO; // no rotait simple calcultor 
+}
+
+- (IBAction)showMenuButtonPressed:(UIBarButtonItem *)sender {
+    // Dismiss keyboard (optional)
+    //
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    
+    // Present the view controller
+    //
+    [self.frostedViewController presentMenuViewController];
 }
 
 
@@ -96,6 +109,5 @@ static NSString * const CalculatorDotSymbol = @".";
     }
     return _calculatorModel;
 }
-
 
 @end
